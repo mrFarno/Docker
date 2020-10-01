@@ -1,0 +1,17 @@
+Si vous utlisez cmder, vous pouvez rajouter les lignes suivantes au fichier chemin/vers/cmder(_mini)/config/user_aliases.cmd en faisant un clique droit + modifier dessus
+
+;Docker aliases
+runapache=d: && cd D:\dev-oniris\Docker\ && docker-compose -f docker-compose_apache.yml up
+runnginx=d: && cd D:\dev-oniris\Docker\ && docker-compose -f docker-compose_nginx.yml up
+downapache=d: && cd D:\dev-oniris\Docker\ && docker-compose -f docker-compose_apache.yml down
+downnginx=d: && cd D:\dev-oniris\Docker\ && docker-compose -f docker-compose_nginx.yml down
+explore=docker exec -ti $1 bash
+
+
+Vous pouvez maintenant en ouvrant cmder lancer les commandes :
+
+runapache	=> déploira le serveur Apache local
+runnginx	=> déploira le serveur Nginx local
+downapache	=> fermer le serveur Apache quand il tourne et supprimer les conteneurs correspondants
+downnginx	=> fermer le serveur Nginx quand il tourne et supprimer les conteneurs correspondants
+explore <conteneur>		=> ouvrira une console intéractive à l'intérieur de <conteneur>

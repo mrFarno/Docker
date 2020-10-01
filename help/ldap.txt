@@ -1,0 +1,2 @@
+Pour sync LDAP (sync auto ne marche pas), éxécuter dans le container :
+	php moodle/admin/tool/task/cli/schedule_task.php --execute=\\auth_ldap\\task\\sync_task

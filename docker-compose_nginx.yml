@@ -1,0 +1,105 @@
+# /!\ Respecter l'indentation dans ce fichier ! tous les "-" doivent être au même niveau /!\
+
+  # oniris_dev:
+  #   image: francarmona/docker-ubuntu16-nginx-php7:latest
+  #   ports:
+  # # Si vous souhaitez modifier le port utilisé, vous devez modifier la ligne suivante. Remplacer la valeur avant le caractère ":" par celle de votre choix.
+  # # Par exemple, pour déployer votre projet sur le port 81 de votre localhost, la ligne suivante devra être replacée par - 81:80
+  #     - 80:80
+  #   volumes:
+  #     - ./../:/var/www/html
+  #     - ./config/nginx/site.conf:/etc/nginx/sites-enabled/.conf
+  #   links:
+  #     - db:db
+version: '3.7'
+services:
+  web:
+      # image: francarmona/docker-ubuntu16-nginx-php7:latest
+      build: 
+        context: ./nginxbuild/
+      #   dockerfile: Dockerfile
+      ports:
+          - "80:80"
+      volumes:
+          - ./../:/var/www/html
+          - ./config/nginx/site.conf:/etc/nginx/sites-enabled/qamphi.conf
+          - ./config/nginx/site.conf:/etc/nginx/sites-available/qamphi.conf
+          # - ./config/nginx/nginx.conf:/etc/nginx/nginx.conf
+      depends_on:
+          - db
+      
+      networks:
+        web_net:
+
+  # php:
+  #     image: php:7-fpm
+  #     volumes:
+  #         - ./../:/var/www/html
+  #     networks:
+  #       web_net:
+
+
+  db:
+    image: mysql:5.7
+    command: --default-authentication-plugin=mysql_native_password
+    volumes:
+      - ./ddb/mysql:/var/lib/mysql
+      - ./config/mysql:/etc/mysql/conf.d
+      - ./ddb/logs:/var/log/mysql
+    environment:
+      - MYSQL_ROOT_PASSWORD=root
+  # Pour utiliser un couple login/mdp de votre choix, décommenter les 2 lignes suivantes (supprimer les #) et y insérer les valeurs souhaitées
+  #    - MYSQL_USER="example"                
+  #    - MYSQL_PASSWORD="example"
+  #    - MYSQL_ALLOW_EMPTY_PASSWORD="yes"
+    networks:
+      web_net:
+
+
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    restart: always
+    ports:
+  # Si vous souhaitez modifier le port utilisé par PhpMyAdmin, cf lignes 8 et 9
+      - 8080:80
+    depends_on:
+      - db
+    networks:
+      web_net:
+
+  ldap:
+    image: osixia/openldap
+    environment:
+      - LDAP_DOMAIN=dev-oniris.org
+      - LDAP_ADMIN_PASSWORD=root
+      # - HOSTNAME=ldap.dev-oniris.org
+    ports:
+      - 389:389
+      - 636:636
+    volumes:
+      - ./config/ldapdata:/var/lib/ldap
+      - ./config/ldapconf:/etc/ldap/slapd.d
+      - ./config/ldapcerts:/container/service/slapd/assets/certs/
+    networks:
+      web_net:
+        ipv4_address: 10.1.0.100
+
+
+  phpldapadmin:
+    image: osixia/phpldapadmin:latest
+    environment:
+      - PHPLDAPADMIN_LDAP_HOSTS=ldap
+      - PHPLDAPADMIN_HTTPS=false
+    depends_on:
+        - ldap
+    ports:
+      - 6080:80
+    networks:
+      web_net:  
+
+networks:
+  web_net:
+    ipam:
+      driver: default
+      config:
+        - subnet: 10.1.0.0/16

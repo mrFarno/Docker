@@ -1,0 +1,1576 @@
+mysqld, Version: 5.7.27 (MySQL Community Server (GPL)). started with:
+Tcp port: 3306  Unix socket: /var/run/mysqld/mysqld.sock
+Time                 Id Command    Argument
+2019-10-18T09:28:31.471817Z	  161 Quit	
+2019-10-18T09:28:35.397432Z	  162 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:28:35.398042Z	  162 Query	SET NAMES utf8
+2019-10-18T09:28:35.398223Z	  162 Query	SELECT * FROM config WHERE type = 'auth' AND name = 'moodle'
+2019-10-18T09:28:35.399367Z	  163 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:28:35.399516Z	  163 Query	SET NAMES utf8
+2019-10-18T09:28:35.399661Z	  163 Query	SELECT * FROM lang
+2019-10-18T09:28:35.422678Z	  162 Quit	
+2019-10-18T09:28:35.423062Z	  164 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:28:35.423190Z	  164 Query	SET NAMES utf8
+2019-10-18T09:28:35.423319Z	  164 Query	SELECT * FROM config WHERE type = 'view' AND name = 'background'
+2019-10-18T09:28:35.426317Z	  165 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:28:35.426447Z	  165 Query	SET NAMES utf8
+2019-10-18T09:28:35.426576Z	  165 Query	SELECT COUNT(*) FROM `questions` WHERE session_id = 9
+2019-10-18T09:28:35.427059Z	  166 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:28:35.427180Z	  166 Query	SET NAMES utf8
+2019-10-18T09:28:35.427296Z	  166 Query	SELECT * FROM sessions WHERE id="9"
+2019-10-18T09:28:35.428881Z	  167 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:28:35.429004Z	  167 Query	SET NAMES utf8
+2019-10-18T09:28:35.429112Z	  165 Quit	
+2019-10-18T09:28:35.429183Z	  167 Query	SELECT * FROM questions WHERE session_id LIKE 9 ORDER BY q_order
+2019-10-18T09:28:35.430226Z	  168 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:28:35.430359Z	  168 Query	SET NAMES utf8
+2019-10-18T09:28:35.430495Z	  168 Query	SELECT * FROM propositions WHERE question_id LIKE 49 ORDER BY p_order
+2019-10-18T09:28:35.431963Z	  169 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:28:35.432095Z	  169 Query	SET NAMES utf8
+2019-10-18T09:28:35.432209Z	  168 Quit	
+2019-10-18T09:28:35.432299Z	  169 Query	SELECT * FROM propositions WHERE question_id LIKE 37 ORDER BY p_order
+2019-10-18T09:28:35.432912Z	  170 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:28:35.433038Z	  170 Query	SET NAMES utf8
+2019-10-18T09:28:35.433144Z	  169 Quit	
+2019-10-18T09:28:35.433212Z	  170 Query	SELECT * FROM propositions WHERE question_id LIKE 50 ORDER BY p_order
+2019-10-18T09:28:35.433900Z	  171 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:28:35.434022Z	  171 Query	SET NAMES utf8
+2019-10-18T09:28:35.434175Z	  170 Quit	
+2019-10-18T09:28:35.434244Z	  171 Query	SELECT * FROM propositions WHERE question_id LIKE 51 ORDER BY p_order
+2019-10-18T09:28:35.434810Z	  172 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:28:35.434969Z	  172 Query	SET NAMES utf8
+2019-10-18T09:28:35.435078Z	  171 Quit	
+2019-10-18T09:28:35.435164Z	  172 Query	SELECT * FROM propositions WHERE question_id LIKE 48 ORDER BY p_order
+2019-10-18T09:28:35.436305Z	  173 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:28:35.436630Z	  173 Query	SET NAMES utf8
+2019-10-18T09:28:35.436914Z	  172 Quit	
+2019-10-18T09:28:35.437141Z	  173 Query	SELECT * FROM propositions WHERE question_id LIKE 52 ORDER BY p_order
+2019-10-18T09:28:35.438395Z	  174 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:28:35.438860Z	  174 Query	SET NAMES utf8
+2019-10-18T09:28:35.439095Z	  173 Quit	
+2019-10-18T09:28:35.439216Z	  174 Query	SELECT * FROM propositions WHERE question_id LIKE 53 ORDER BY p_order
+2019-10-18T09:28:35.439811Z	  163 Quit	
+2019-10-18T09:28:35.439844Z	  164 Quit	
+2019-10-18T09:28:35.439969Z	  167 Quit	
+2019-10-18T09:28:35.440031Z	  166 Quit	
+2019-10-18T09:28:35.440049Z	  174 Quit	
+2019-10-18T09:28:39.797737Z	  175 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:28:39.798333Z	  175 Query	SET NAMES utf8
+2019-10-18T09:28:39.798512Z	  175 Query	SELECT * FROM config WHERE type = 'auth' AND name = 'moodle'
+2019-10-18T09:28:39.800320Z	  176 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:28:39.800474Z	  176 Query	SET NAMES utf8
+2019-10-18T09:28:39.800633Z	  176 Query	SELECT * FROM lang
+2019-10-18T09:28:39.826930Z	  175 Quit	
+2019-10-18T09:28:39.827332Z	  177 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:28:39.827461Z	  177 Query	SET NAMES utf8
+2019-10-18T09:28:39.827595Z	  177 Query	SELECT * FROM config WHERE type = 'view' AND name = 'background'
+2019-10-18T09:28:39.830567Z	  178 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:28:39.830700Z	  178 Query	SET NAMES utf8
+2019-10-18T09:28:39.830830Z	  178 Query	SELECT COUNT(*) FROM `questions` WHERE session_id = 9
+2019-10-18T09:28:39.831302Z	  179 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:28:39.831435Z	  179 Query	SET NAMES utf8
+2019-10-18T09:28:39.831559Z	  179 Query	UPDATE sessions SET title="azer" WHERE id=9
+2019-10-18T09:28:39.932765Z	  180 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:28:39.932977Z	  180 Query	SET NAMES utf8
+2019-10-18T09:28:39.933186Z	  178 Quit	
+2019-10-18T09:28:39.933224Z	  180 Query	UPDATE questions SET q_text= 'zerazer' WHERE session_id= '9' AND q_order= '1'
+2019-10-18T09:28:39.943370Z	  181 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:28:39.943596Z	  181 Query	SET NAMES utf8
+2019-10-18T09:28:39.943765Z	  181 Query	UPDATE propositions SET p_text = 'azere', correct = '0' WHERE question_id = '49' AND p_order= '1'
+2019-10-18T09:28:39.956397Z	  182 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:28:39.956602Z	  182 Query	SET NAMES utf8
+2019-10-18T09:28:39.956778Z	  181 Quit	
+2019-10-18T09:28:39.956807Z	  182 Query	UPDATE propositions SET p_text = 'azerazer', correct = '0' WHERE question_id = '49' AND p_order= '2'
+2019-10-18T09:28:39.968458Z	  183 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:28:39.969112Z	  183 Query	SET NAMES utf8
+2019-10-18T09:28:39.969675Z	  182 Quit	
+2019-10-18T09:28:39.970112Z	  183 Query	UPDATE propositions SET p_text = 'azer', correct = '0' WHERE question_id = '49' AND p_order= '3'
+2019-10-18T09:28:39.984566Z	  184 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:28:39.985207Z	  184 Query	SET NAMES utf8
+2019-10-18T09:28:39.985776Z	  183 Quit	
+2019-10-18T09:28:39.986200Z	  184 Query	UPDATE propositions SET p_text = 'azer', correct = '0' WHERE question_id = '49' AND p_order= '4'
+2019-10-18T09:28:40.001256Z	  185 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:28:40.002017Z	  185 Query	SET NAMES utf8
+2019-10-18T09:28:40.002681Z	  184 Quit	
+2019-10-18T09:28:40.003137Z	  185 Query	UPDATE propositions SET p_text = '', correct = '0' WHERE question_id = '49' AND p_order= '5'
+2019-10-18T09:28:40.017664Z	  186 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:28:40.018714Z	  186 Query	SET NAMES utf8
+2019-10-18T09:28:40.019426Z	  180 Quit	
+2019-10-18T09:28:40.019861Z	  186 Query	UPDATE questions SET q_text= 'fdghdfgh' WHERE session_id= '9' AND q_order= '2'
+2019-10-18T09:28:40.034031Z	  187 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:28:40.034737Z	  187 Query	SET NAMES utf8
+2019-10-18T09:28:40.035457Z	  185 Quit	
+2019-10-18T09:28:40.035811Z	  187 Query	UPDATE propositions SET p_text = 'fdghdfgh', correct = '0' WHERE question_id = '37' AND p_order= '1'
+2019-10-18T09:28:40.049134Z	  188 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:28:40.049562Z	  188 Query	SET NAMES utf8
+2019-10-18T09:28:40.049941Z	  187 Quit	
+2019-10-18T09:28:40.050136Z	  188 Query	UPDATE propositions SET p_text = 'dfghdfgh', correct = '0' WHERE question_id = '37' AND p_order= '2'
+2019-10-18T09:28:40.062530Z	  189 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:28:40.062869Z	  189 Query	SET NAMES utf8
+2019-10-18T09:28:40.063186Z	  188 Quit	
+2019-10-18T09:28:40.063312Z	  189 Query	UPDATE propositions SET p_text = 'dfghdfgh', correct = '0' WHERE question_id = '37' AND p_order= '3'
+2019-10-18T09:28:40.072908Z	  190 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:28:40.073187Z	  190 Query	SET NAMES utf8
+2019-10-18T09:28:40.073431Z	  189 Quit	
+2019-10-18T09:28:40.073543Z	  190 Query	UPDATE propositions SET p_text = 'dfghdfgh', correct = '0' WHERE question_id = '37' AND p_order= '4'
+2019-10-18T09:28:40.087551Z	  191 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:28:40.087797Z	  191 Query	SET NAMES utf8
+2019-10-18T09:28:40.088117Z	  190 Quit	
+2019-10-18T09:28:40.088289Z	  191 Query	UPDATE propositions SET p_text = 'dfghdfgh', correct = '0' WHERE question_id = '37' AND p_order= '5'
+2019-10-18T09:28:40.097353Z	  192 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:28:40.097585Z	  192 Query	SET NAMES utf8
+2019-10-18T09:28:40.097793Z	  186 Quit	
+2019-10-18T09:28:40.097899Z	  192 Query	UPDATE questions SET q_text= 'ze' WHERE session_id= '9' AND q_order= '3'
+2019-10-18T09:28:40.111295Z	  193 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:28:40.111521Z	  193 Query	SET NAMES utf8
+2019-10-18T09:28:40.111724Z	  191 Quit	
+2019-10-18T09:28:40.111819Z	  193 Query	UPDATE propositions SET p_text = 'azerazer', correct = '0' WHERE question_id = '50' AND p_order= '1'
+2019-10-18T09:28:40.122091Z	  194 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:28:40.122352Z	  194 Query	SET NAMES utf8
+2019-10-18T09:28:40.122546Z	  193 Quit	
+2019-10-18T09:28:40.122649Z	  194 Query	UPDATE propositions SET p_text = 'zerazer', correct = '0' WHERE question_id = '50' AND p_order= '2'
+2019-10-18T09:28:40.135575Z	  195 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:28:40.135761Z	  195 Query	SET NAMES utf8
+2019-10-18T09:28:40.135963Z	  194 Quit	
+2019-10-18T09:28:40.136124Z	  195 Query	UPDATE propositions SET p_text = 'aer', correct = '0' WHERE question_id = '50' AND p_order= '3'
+2019-10-18T09:28:40.146436Z	  196 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:28:40.146649Z	  196 Query	SET NAMES utf8
+2019-10-18T09:28:40.146844Z	  195 Quit	
+2019-10-18T09:28:40.146936Z	  196 Query	UPDATE propositions SET p_text = '', correct = '0' WHERE question_id = '50' AND p_order= '4'
+2019-10-18T09:28:40.160196Z	  197 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:28:40.160412Z	  197 Query	SET NAMES utf8
+2019-10-18T09:28:40.160608Z	  196 Quit	
+2019-10-18T09:28:40.160702Z	  197 Query	UPDATE propositions SET p_text = '', correct = '0' WHERE question_id = '50' AND p_order= '5'
+2019-10-18T09:28:40.172076Z	  198 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:28:40.172395Z	  198 Query	SET NAMES utf8
+2019-10-18T09:28:40.172686Z	  192 Quit	
+2019-10-18T09:28:40.172799Z	  198 Query	UPDATE questions SET q_text= 'zer' WHERE session_id= '9' AND q_order= '4'
+2019-10-18T09:28:40.186841Z	  199 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:28:40.187658Z	  199 Query	SET NAMES utf8
+2019-10-18T09:28:40.188407Z	  197 Quit	
+2019-10-18T09:28:40.188782Z	  199 Query	UPDATE propositions SET p_text = 'aer', correct = '0' WHERE question_id = '51' AND p_order= '1'
+2019-10-18T09:28:40.205719Z	  200 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:28:40.207137Z	  200 Query	SET NAMES utf8
+2019-10-18T09:28:40.207951Z	  199 Quit	
+2019-10-18T09:28:40.208275Z	  200 Query	UPDATE propositions SET p_text = 'azer', correct = '0' WHERE question_id = '51' AND p_order= '2'
+2019-10-18T09:28:40.222426Z	  201 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:28:40.223211Z	  201 Query	SET NAMES utf8
+2019-10-18T09:28:40.223917Z	  200 Quit	
+2019-10-18T09:28:40.224197Z	  201 Query	UPDATE propositions SET p_text = 'azer', correct = '0' WHERE question_id = '51' AND p_order= '3'
+2019-10-18T09:28:40.237324Z	  202 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:28:40.237732Z	  202 Query	SET NAMES utf8
+2019-10-18T09:28:40.238187Z	  201 Quit	
+2019-10-18T09:28:40.238388Z	  202 Query	UPDATE propositions SET p_text = '', correct = '0' WHERE question_id = '51' AND p_order= '4'
+2019-10-18T09:28:40.250005Z	  203 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:28:40.250166Z	  203 Query	SET NAMES utf8
+2019-10-18T09:28:40.250310Z	  202 Quit	
+2019-10-18T09:28:40.250399Z	  203 Query	UPDATE propositions SET p_text = '', correct = '0' WHERE question_id = '51' AND p_order= '5'
+2019-10-18T09:28:40.261026Z	  204 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:28:40.261269Z	  204 Query	SET NAMES utf8
+2019-10-18T09:28:40.261465Z	  198 Quit	
+2019-10-18T09:28:40.261558Z	  204 Query	UPDATE questions SET q_text= 'ertye' WHERE session_id= '9' AND q_order= '5'
+2019-10-18T09:28:40.274763Z	  205 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:28:40.274982Z	  205 Query	SET NAMES utf8
+2019-10-18T09:28:40.275214Z	  205 Query	UPDATE propositions SET p_text = 'trye', correct = '0' WHERE question_id = '48' AND p_order= '1'
+2019-10-18T09:28:40.275406Z	  203 Quit	
+2019-10-18T09:28:40.285995Z	  206 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:28:40.286271Z	  206 Query	SET NAMES utf8
+2019-10-18T09:28:40.286559Z	  205 Quit	
+2019-10-18T09:28:40.286865Z	  206 Query	UPDATE propositions SET p_text = 'ertye', correct = '0' WHERE question_id = '48' AND p_order= '2'
+2019-10-18T09:28:40.299339Z	  207 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:28:40.299578Z	  207 Query	SET NAMES utf8
+2019-10-18T09:28:40.299821Z	  207 Query	UPDATE propositions SET p_text = 'tyerty', correct = '0' WHERE question_id = '48' AND p_order= '3'
+2019-10-18T09:28:40.300034Z	  206 Quit	
+2019-10-18T09:28:40.310492Z	  208 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:28:40.310729Z	  208 Query	SET NAMES utf8
+2019-10-18T09:28:40.310941Z	  207 Quit	
+2019-10-18T09:28:40.311044Z	  208 Query	UPDATE propositions SET p_text = 'ertyer', correct = '0' WHERE question_id = '48' AND p_order= '4'
+2019-10-18T09:28:40.323940Z	  209 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:28:40.324203Z	  209 Query	SET NAMES utf8
+2019-10-18T09:28:40.324423Z	  208 Quit	
+2019-10-18T09:28:40.324468Z	  209 Query	UPDATE propositions SET p_text = 'tyerty', correct = '0' WHERE question_id = '48' AND p_order= '5'
+2019-10-18T09:28:40.334700Z	  210 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:28:40.334973Z	  210 Query	SET NAMES utf8
+2019-10-18T09:28:40.335212Z	  204 Quit	
+2019-10-18T09:28:40.335352Z	  210 Query	UPDATE questions SET q_text= 'sdfg' WHERE session_id= '9' AND q_order= '6'
+2019-10-18T09:28:40.348811Z	  211 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:28:40.349178Z	  211 Query	SET NAMES utf8
+2019-10-18T09:28:40.349507Z	  209 Quit	
+2019-10-18T09:28:40.349667Z	  211 Query	UPDATE propositions SET p_text = 'sdfg', correct = '0' WHERE question_id = '52' AND p_order= '1'
+2019-10-18T09:28:40.359655Z	  212 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:28:40.360018Z	  212 Query	SET NAMES utf8
+2019-10-18T09:28:40.360358Z	  211 Quit	
+2019-10-18T09:28:40.360474Z	  212 Query	UPDATE propositions SET p_text = 'sdfg', correct = '0' WHERE question_id = '52' AND p_order= '2'
+2019-10-18T09:28:40.373464Z	  213 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:28:40.373838Z	  213 Query	SET NAMES utf8
+2019-10-18T09:28:40.374171Z	  212 Quit	
+2019-10-18T09:28:40.374341Z	  213 Query	UPDATE propositions SET p_text = 'sdfg', correct = '0' WHERE question_id = '52' AND p_order= '3'
+2019-10-18T09:28:40.384408Z	  214 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:28:40.384751Z	  214 Query	SET NAMES utf8
+2019-10-18T09:28:40.385072Z	  213 Quit	
+2019-10-18T09:28:40.385226Z	  214 Query	UPDATE propositions SET p_text = 'sdfg', correct = '0' WHERE question_id = '52' AND p_order= '4'
+2019-10-18T09:28:40.398309Z	  215 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:28:40.398655Z	  215 Query	SET NAMES utf8
+2019-10-18T09:28:40.398973Z	  214 Quit	
+2019-10-18T09:28:40.399158Z	  215 Query	UPDATE propositions SET p_text = '', correct = '0' WHERE question_id = '52' AND p_order= '5'
+2019-10-18T09:28:40.408809Z	  216 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:28:40.409149Z	  216 Query	SET NAMES utf8
+2019-10-18T09:28:40.409465Z	  210 Quit	
+2019-10-18T09:28:40.409627Z	  216 Query	UPDATE questions SET q_text= 'zertzert' WHERE session_id= '9' AND q_order= '7'
+2019-10-18T09:28:40.421868Z	  217 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:28:40.422092Z	  217 Query	SET NAMES utf8
+2019-10-18T09:28:40.422298Z	  215 Quit	
+2019-10-18T09:28:40.422403Z	  217 Query	UPDATE propositions SET p_text = 'zert', correct = '0' WHERE question_id = '53' AND p_order= '1'
+2019-10-18T09:28:40.432750Z	  218 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:28:40.432961Z	  218 Query	SET NAMES utf8
+2019-10-18T09:28:40.433153Z	  217 Quit	
+2019-10-18T09:28:40.433260Z	  218 Query	UPDATE propositions SET p_text = 'ezrt', correct = '0' WHERE question_id = '53' AND p_order= '2'
+2019-10-18T09:28:40.446610Z	  219 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:28:40.446825Z	  219 Query	SET NAMES utf8
+2019-10-18T09:28:40.447040Z	  218 Quit	
+2019-10-18T09:28:40.447143Z	  219 Query	UPDATE propositions SET p_text = 'zert', correct = '0' WHERE question_id = '53' AND p_order= '3'
+2019-10-18T09:28:40.457222Z	  220 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:28:40.457446Z	  220 Query	SET NAMES utf8
+2019-10-18T09:28:40.457641Z	  219 Quit	
+2019-10-18T09:28:40.457745Z	  220 Query	UPDATE propositions SET p_text = 'zert', correct = '0' WHERE question_id = '53' AND p_order= '4'
+2019-10-18T09:28:40.471731Z	  221 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:28:40.471939Z	  221 Query	SET NAMES utf8
+2019-10-18T09:28:40.472145Z	  220 Quit	
+2019-10-18T09:28:40.472192Z	  221 Query	UPDATE propositions SET p_text = '', correct = '0' WHERE question_id = '53' AND p_order= '5'
+2019-10-18T09:28:40.481777Z	  222 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:28:40.481980Z	  222 Query	SET NAMES utf8
+2019-10-18T09:28:40.482163Z	  216 Quit	
+2019-10-18T09:28:40.482268Z	  222 Query	INSERT INTO questions(session_id, q_order, q_text) VALUES('9', '8', '')
+2019-10-18T09:28:40.495632Z	  223 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:28:40.495876Z	  223 Query	SET NAMES utf8
+2019-10-18T09:28:40.496090Z	  223 Query	SELECT max(id) FROM questions
+2019-10-18T09:28:40.496366Z	  222 Quit	
+2019-10-18T09:28:40.496819Z	  224 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:28:40.497022Z	  224 Query	SET NAMES utf8
+2019-10-18T09:28:40.497211Z	  221 Quit	
+2019-10-18T09:28:40.497294Z	  224 Query	INSERT INTO propositions(question_id, p_order, p_text, correct) VALUES(54, 1, "", 0)
+2019-10-18T09:28:40.506131Z	  225 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:28:40.506222Z	  225 Query	SET NAMES utf8
+2019-10-18T09:28:40.506362Z	  225 Query	INSERT INTO propositions(question_id, p_order, p_text, correct) VALUES(54, 2, "", 0)
+2019-10-18T09:28:40.506470Z	  224 Quit	
+2019-10-18T09:28:40.536546Z	  226 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:28:40.536870Z	  226 Query	SET NAMES utf8
+2019-10-18T09:28:40.537309Z	  225 Quit	
+2019-10-18T09:28:40.537700Z	  226 Query	INSERT INTO propositions(question_id, p_order, p_text, correct) VALUES(54, 3, "", 0)
+2019-10-18T09:28:40.547170Z	  227 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:28:40.547433Z	  227 Query	SET NAMES utf8
+2019-10-18T09:28:40.547620Z	  226 Quit	
+2019-10-18T09:28:40.547630Z	  227 Query	INSERT INTO propositions(question_id, p_order, p_text, correct) VALUES(54, 4, "", 0)
+2019-10-18T09:28:40.561142Z	  228 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:28:40.561358Z	  228 Query	SET NAMES utf8
+2019-10-18T09:28:40.561557Z	  227 Quit	
+2019-10-18T09:28:40.561653Z	  228 Query	INSERT INTO propositions(question_id, p_order, p_text, correct) VALUES(54, 5, "", 0)
+2019-10-18T09:28:40.574419Z	  229 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:28:40.575147Z	  229 Query	SET NAMES utf8
+2019-10-18T09:28:40.575871Z	  179 Quit	
+2019-10-18T09:28:40.576221Z	  229 Query	SELECT * FROM sessions WHERE id="9"
+2019-10-18T09:28:40.582447Z	  230 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:28:40.583173Z	  230 Query	SET NAMES utf8
+2019-10-18T09:28:40.583886Z	  223 Quit	
+2019-10-18T09:28:40.584220Z	  230 Query	SELECT * FROM questions WHERE session_id LIKE 9 ORDER BY q_order
+2019-10-18T09:28:40.586859Z	  231 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:28:40.588071Z	  231 Query	SET NAMES utf8
+2019-10-18T09:28:40.588897Z	  228 Quit	
+2019-10-18T09:28:40.589364Z	  231 Query	SELECT * FROM propositions WHERE question_id LIKE 49 ORDER BY p_order
+2019-10-18T09:28:40.592977Z	  232 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:28:40.593666Z	  232 Query	SET NAMES utf8
+2019-10-18T09:28:40.594225Z	  231 Quit	
+2019-10-18T09:28:40.594506Z	  232 Query	SELECT * FROM propositions WHERE question_id LIKE 37 ORDER BY p_order
+2019-10-18T09:28:40.596594Z	  233 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:28:40.597108Z	  233 Query	SET NAMES utf8
+2019-10-18T09:28:40.597540Z	  232 Quit	
+2019-10-18T09:28:40.597768Z	  233 Query	SELECT * FROM propositions WHERE question_id LIKE 50 ORDER BY p_order
+2019-10-18T09:28:40.599797Z	  234 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:28:40.600184Z	  234 Query	SET NAMES utf8
+2019-10-18T09:28:40.600572Z	  233 Quit	
+2019-10-18T09:28:40.600747Z	  234 Query	SELECT * FROM propositions WHERE question_id LIKE 51 ORDER BY p_order
+2019-10-18T09:28:40.602305Z	  235 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:28:40.602697Z	  235 Query	SET NAMES utf8
+2019-10-18T09:28:40.603117Z	  234 Quit	
+2019-10-18T09:28:40.603350Z	  235 Query	SELECT * FROM propositions WHERE question_id LIKE 48 ORDER BY p_order
+2019-10-18T09:28:40.605736Z	  236 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:28:40.606095Z	  236 Query	SET NAMES utf8
+2019-10-18T09:28:40.606452Z	  235 Quit	
+2019-10-18T09:28:40.606633Z	  236 Query	SELECT * FROM propositions WHERE question_id LIKE 52 ORDER BY p_order
+2019-10-18T09:28:40.608053Z	  237 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:28:40.608429Z	  237 Query	SET NAMES utf8
+2019-10-18T09:28:40.608746Z	  236 Quit	
+2019-10-18T09:28:40.608901Z	  237 Query	SELECT * FROM propositions WHERE question_id LIKE 53 ORDER BY p_order
+2019-10-18T09:28:40.610130Z	  238 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:28:40.610422Z	  238 Query	SET NAMES utf8
+2019-10-18T09:28:40.610702Z	  237 Quit	
+2019-10-18T09:28:40.610815Z	  238 Query	SELECT * FROM propositions WHERE question_id LIKE 54 ORDER BY p_order
+2019-10-18T09:28:40.611438Z	  176 Quit	
+2019-10-18T09:28:40.611541Z	  230 Quit	
+2019-10-18T09:28:40.611642Z	  238 Quit	
+2019-10-18T09:28:40.612229Z	  177 Quit	
+2019-10-18T09:28:40.612386Z	  229 Quit	
+2019-10-18T09:28:45.199792Z	  239 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:28:45.200419Z	  239 Query	SET NAMES utf8
+2019-10-18T09:28:45.200561Z	  239 Query	SELECT * FROM config WHERE type = 'auth' AND name = 'moodle'
+2019-10-18T09:28:45.201585Z	  240 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:28:45.201696Z	  240 Query	SET NAMES utf8
+2019-10-18T09:28:45.201815Z	  240 Query	SELECT * FROM lang
+2019-10-18T09:28:45.231949Z	  239 Quit	
+2019-10-18T09:28:45.232303Z	  241 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:28:45.232436Z	  241 Query	SET NAMES utf8
+2019-10-18T09:28:45.232597Z	  241 Query	SELECT * FROM config WHERE type = 'view' AND name = 'background'
+2019-10-18T09:28:45.236803Z	  242 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:28:45.237303Z	  242 Query	SET NAMES utf8
+2019-10-18T09:28:45.237497Z	  242 Query	SELECT COUNT(*) FROM `questions` WHERE session_id = 9
+2019-10-18T09:28:45.238177Z	  243 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:28:45.238353Z	  243 Query	SET NAMES utf8
+2019-10-18T09:28:45.238505Z	  243 Query	UPDATE sessions SET title="azer" WHERE id=9
+2019-10-18T09:28:45.338825Z	  244 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:28:45.339053Z	  244 Query	SET NAMES utf8
+2019-10-18T09:28:45.339258Z	  242 Quit	
+2019-10-18T09:28:45.339385Z	  244 Query	UPDATE questions SET q_text= 'zerazer' WHERE session_id= '9' AND q_order= '1'
+2019-10-18T09:28:45.357330Z	  245 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:28:45.357546Z	  245 Query	SET NAMES utf8
+2019-10-18T09:28:45.357809Z	  245 Query	UPDATE propositions SET p_text = 'azere', correct = '0' WHERE question_id = '49' AND p_order= '1'
+2019-10-18T09:28:45.368716Z	  246 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:28:45.368928Z	  246 Query	SET NAMES utf8
+2019-10-18T09:28:45.369121Z	  245 Quit	
+2019-10-18T09:28:45.369222Z	  246 Query	UPDATE propositions SET p_text = 'azerazer', correct = '0' WHERE question_id = '49' AND p_order= '2'
+2019-10-18T09:28:45.379957Z	  247 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:28:45.380159Z	  247 Query	SET NAMES utf8
+2019-10-18T09:28:45.380336Z	  246 Quit	
+2019-10-18T09:28:45.380421Z	  247 Query	UPDATE propositions SET p_text = 'azer', correct = '0' WHERE question_id = '49' AND p_order= '3'
+2019-10-18T09:28:45.393814Z	  248 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:28:45.394072Z	  248 Query	SET NAMES utf8
+2019-10-18T09:28:45.394285Z	  247 Quit	
+2019-10-18T09:28:45.394391Z	  248 Query	UPDATE propositions SET p_text = 'azer', correct = '0' WHERE question_id = '49' AND p_order= '4'
+2019-10-18T09:28:45.404902Z	  249 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:28:45.405156Z	  249 Query	SET NAMES utf8
+2019-10-18T09:28:45.405352Z	  248 Quit	
+2019-10-18T09:28:45.405460Z	  249 Query	UPDATE propositions SET p_text = '', correct = '0' WHERE question_id = '49' AND p_order= '5'
+2019-10-18T09:28:45.417891Z	  250 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:28:45.418102Z	  250 Query	SET NAMES utf8
+2019-10-18T09:28:45.418310Z	  244 Quit	
+2019-10-18T09:28:45.418408Z	  250 Query	UPDATE questions SET q_text= 'fdghdfgh' WHERE session_id= '9' AND q_order= '2'
+2019-10-18T09:28:45.429150Z	  251 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:28:45.429409Z	  251 Query	SET NAMES utf8
+2019-10-18T09:28:45.429659Z	  249 Quit	
+2019-10-18T09:28:45.429706Z	  251 Query	UPDATE propositions SET p_text = 'fdghdfgh', correct = '0' WHERE question_id = '37' AND p_order= '1'
+2019-10-18T09:28:45.443341Z	  252 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:28:45.443681Z	  252 Query	SET NAMES utf8
+2019-10-18T09:28:45.443992Z	  251 Quit	
+2019-10-18T09:28:45.444143Z	  252 Query	UPDATE propositions SET p_text = 'dfghdfgh', correct = '0' WHERE question_id = '37' AND p_order= '2'
+2019-10-18T09:28:45.454350Z	  253 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:28:45.454668Z	  253 Query	SET NAMES utf8
+2019-10-18T09:28:45.455002Z	  252 Quit	
+2019-10-18T09:28:45.455162Z	  253 Query	UPDATE propositions SET p_text = 'dfghdfgh', correct = '0' WHERE question_id = '37' AND p_order= '3'
+2019-10-18T09:28:45.468158Z	  254 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:28:45.468572Z	  254 Query	SET NAMES utf8
+2019-10-18T09:28:45.468936Z	  253 Quit	
+2019-10-18T09:28:45.469137Z	  254 Query	UPDATE propositions SET p_text = 'dfghdfgh', correct = '0' WHERE question_id = '37' AND p_order= '4'
+2019-10-18T09:28:45.478955Z	  255 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:28:45.479348Z	  255 Query	SET NAMES utf8
+2019-10-18T09:28:45.479728Z	  254 Quit	
+2019-10-18T09:28:45.479917Z	  255 Query	UPDATE propositions SET p_text = 'dfghdfgh', correct = '0' WHERE question_id = '37' AND p_order= '5'
+2019-10-18T09:28:45.492583Z	  256 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:28:45.492972Z	  256 Query	SET NAMES utf8
+2019-10-18T09:28:45.493337Z	  250 Quit	
+2019-10-18T09:28:45.493520Z	  256 Query	UPDATE questions SET q_text= 'ze' WHERE session_id= '9' AND q_order= '3'
+2019-10-18T09:28:45.503412Z	  257 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:28:45.504001Z	  257 Query	SET NAMES utf8
+2019-10-18T09:28:45.504469Z	  255 Quit	
+2019-10-18T09:28:45.504686Z	  257 Query	UPDATE propositions SET p_text = 'azerazer', correct = '0' WHERE question_id = '50' AND p_order= '1'
+2019-10-18T09:28:45.519879Z	  258 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:28:45.520918Z	  258 Query	SET NAMES utf8
+2019-10-18T09:28:45.521417Z	  257 Quit	
+2019-10-18T09:28:45.521648Z	  258 Query	UPDATE propositions SET p_text = 'zerazer', correct = '0' WHERE question_id = '50' AND p_order= '2'
+2019-10-18T09:28:45.535890Z	  259 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:28:45.536293Z	  259 Query	SET NAMES utf8
+2019-10-18T09:28:45.536752Z	  258 Quit	
+2019-10-18T09:28:45.537103Z	  259 Query	UPDATE propositions SET p_text = 'aer', correct = '0' WHERE question_id = '50' AND p_order= '3'
+2019-10-18T09:28:45.558092Z	  260 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:28:45.558532Z	  260 Query	SET NAMES utf8
+2019-10-18T09:28:45.558896Z	  259 Quit	
+2019-10-18T09:28:45.559081Z	  260 Query	UPDATE propositions SET p_text = '', correct = '0' WHERE question_id = '50' AND p_order= '4'
+2019-10-18T09:28:45.577192Z	  261 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:28:45.577579Z	  261 Query	SET NAMES utf8
+2019-10-18T09:28:45.577935Z	  260 Quit	
+2019-10-18T09:28:45.578150Z	  261 Query	UPDATE propositions SET p_text = '', correct = '0' WHERE question_id = '50' AND p_order= '5'
+2019-10-18T09:28:45.590393Z	  262 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:28:45.590798Z	  262 Query	SET NAMES utf8
+2019-10-18T09:28:45.591166Z	  256 Quit	
+2019-10-18T09:28:45.591349Z	  262 Query	UPDATE questions SET q_text= 'zer' WHERE session_id= '9' AND q_order= '4'
+2019-10-18T09:28:45.609587Z	  263 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:28:45.609979Z	  263 Query	SET NAMES utf8
+2019-10-18T09:28:45.610367Z	  261 Quit	
+2019-10-18T09:28:45.610554Z	  263 Query	UPDATE propositions SET p_text = 'aer', correct = '0' WHERE question_id = '51' AND p_order= '1'
+2019-10-18T09:28:45.631414Z	  264 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:28:45.631805Z	  264 Query	SET NAMES utf8
+2019-10-18T09:28:45.632166Z	  263 Quit	
+2019-10-18T09:28:45.632391Z	  264 Query	UPDATE propositions SET p_text = 'azer', correct = '0' WHERE question_id = '51' AND p_order= '2'
+2019-10-18T09:28:45.642446Z	  265 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:28:45.642841Z	  265 Query	SET NAMES utf8
+2019-10-18T09:28:45.643125Z	  264 Quit	
+2019-10-18T09:28:45.643348Z	  265 Query	UPDATE propositions SET p_text = 'azer', correct = '0' WHERE question_id = '51' AND p_order= '3'
+2019-10-18T09:28:45.656240Z	  266 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:28:45.656633Z	  266 Query	SET NAMES utf8
+2019-10-18T09:28:45.656990Z	  265 Quit	
+2019-10-18T09:28:45.657183Z	  266 Query	UPDATE propositions SET p_text = '', correct = '0' WHERE question_id = '51' AND p_order= '4'
+2019-10-18T09:28:45.666546Z	  267 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:28:45.666951Z	  267 Query	SET NAMES utf8
+2019-10-18T09:28:45.667286Z	  266 Quit	
+2019-10-18T09:28:45.667503Z	  267 Query	UPDATE propositions SET p_text = '', correct = '0' WHERE question_id = '51' AND p_order= '5'
+2019-10-18T09:28:45.679686Z	  268 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:28:45.679907Z	  268 Query	SET NAMES utf8
+2019-10-18T09:28:45.680107Z	  262 Quit	
+2019-10-18T09:28:45.680219Z	  268 Query	UPDATE questions SET q_text= 'ertye' WHERE session_id= '9' AND q_order= '5'
+2019-10-18T09:28:45.690485Z	  269 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:28:45.690687Z	  269 Query	SET NAMES utf8
+2019-10-18T09:28:45.690873Z	  267 Quit	
+2019-10-18T09:28:45.690966Z	  269 Query	UPDATE propositions SET p_text = 'trye', correct = '0' WHERE question_id = '48' AND p_order= '1'
+2019-10-18T09:28:45.704790Z	  270 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:28:45.705003Z	  270 Query	SET NAMES utf8
+2019-10-18T09:28:45.705196Z	  269 Quit	
+2019-10-18T09:28:45.705304Z	  270 Query	UPDATE propositions SET p_text = 'ertye', correct = '0' WHERE question_id = '48' AND p_order= '2'
+2019-10-18T09:28:45.714981Z	  271 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:28:45.715206Z	  271 Query	SET NAMES utf8
+2019-10-18T09:28:45.715397Z	  270 Quit	
+2019-10-18T09:28:45.715498Z	  271 Query	UPDATE propositions SET p_text = 'tyerty', correct = '0' WHERE question_id = '48' AND p_order= '3'
+2019-10-18T09:28:45.728743Z	  272 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:28:45.728945Z	  272 Query	SET NAMES utf8
+2019-10-18T09:28:45.729140Z	  271 Quit	
+2019-10-18T09:28:45.729228Z	  272 Query	UPDATE propositions SET p_text = 'ertyer', correct = '0' WHERE question_id = '48' AND p_order= '4'
+2019-10-18T09:28:45.739440Z	  273 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:28:45.739648Z	  273 Query	SET NAMES utf8
+2019-10-18T09:28:45.739830Z	  272 Quit	
+2019-10-18T09:28:45.739917Z	  273 Query	UPDATE propositions SET p_text = 'tyerty', correct = '0' WHERE question_id = '48' AND p_order= '5'
+2019-10-18T09:28:45.753472Z	  274 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:28:45.753913Z	  274 Query	SET NAMES utf8
+2019-10-18T09:28:45.754269Z	  268 Quit	
+2019-10-18T09:28:45.754380Z	  274 Query	UPDATE questions SET q_text= 'sdfg' WHERE session_id= '9' AND q_order= '6'
+2019-10-18T09:28:45.764203Z	  275 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:28:45.764420Z	  275 Query	SET NAMES utf8
+2019-10-18T09:28:45.764627Z	  273 Quit	
+2019-10-18T09:28:45.764750Z	  275 Query	UPDATE propositions SET p_text = 'sdfg', correct = '0' WHERE question_id = '52' AND p_order= '1'
+2019-10-18T09:28:45.777928Z	  276 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:28:45.778145Z	  276 Query	SET NAMES utf8
+2019-10-18T09:28:45.778364Z	  275 Quit	
+2019-10-18T09:28:45.778466Z	  276 Query	UPDATE propositions SET p_text = 'sdfg', correct = '0' WHERE question_id = '52' AND p_order= '2'
+2019-10-18T09:28:45.788923Z	  277 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:28:45.789180Z	  277 Query	SET NAMES utf8
+2019-10-18T09:28:45.789434Z	  276 Quit	
+2019-10-18T09:28:45.789551Z	  277 Query	UPDATE propositions SET p_text = 'sdfg', correct = '0' WHERE question_id = '52' AND p_order= '3'
+2019-10-18T09:28:45.803113Z	  278 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:28:45.803756Z	  278 Query	SET NAMES utf8
+2019-10-18T09:28:45.804224Z	  277 Quit	
+2019-10-18T09:28:45.804414Z	  278 Query	UPDATE propositions SET p_text = 'sdfg', correct = '0' WHERE question_id = '52' AND p_order= '4'
+2019-10-18T09:28:45.813684Z	  279 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:28:45.814048Z	  279 Query	SET NAMES utf8
+2019-10-18T09:28:45.814365Z	  278 Quit	
+2019-10-18T09:28:45.814527Z	  279 Query	UPDATE propositions SET p_text = '', correct = '0' WHERE question_id = '52' AND p_order= '5'
+2019-10-18T09:28:45.827762Z	  280 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:28:45.828085Z	  280 Query	SET NAMES utf8
+2019-10-18T09:28:45.828437Z	  274 Quit	
+2019-10-18T09:28:45.828618Z	  280 Query	UPDATE questions SET q_text= 'zertzert' WHERE session_id= '9' AND q_order= '7'
+2019-10-18T09:28:45.838828Z	  281 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:28:45.839262Z	  281 Query	SET NAMES utf8
+2019-10-18T09:28:45.839638Z	  279 Quit	
+2019-10-18T09:28:45.839848Z	  281 Query	UPDATE propositions SET p_text = 'zert', correct = '0' WHERE question_id = '53' AND p_order= '1'
+2019-10-18T09:28:45.855390Z	  282 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:28:45.855780Z	  282 Query	SET NAMES utf8
+2019-10-18T09:28:45.856148Z	  281 Quit	
+2019-10-18T09:28:45.856378Z	  282 Query	UPDATE propositions SET p_text = 'ezrt', correct = '0' WHERE question_id = '53' AND p_order= '2'
+2019-10-18T09:28:45.877325Z	  283 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:28:45.877733Z	  283 Query	SET NAMES utf8
+2019-10-18T09:28:45.878088Z	  282 Quit	
+2019-10-18T09:28:45.878250Z	  283 Query	UPDATE propositions SET p_text = 'zert', correct = '0' WHERE question_id = '53' AND p_order= '3'
+2019-10-18T09:28:45.888065Z	  284 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:28:45.888464Z	  284 Query	SET NAMES utf8
+2019-10-18T09:28:45.888875Z	  283 Quit	
+2019-10-18T09:28:45.889079Z	  284 Query	UPDATE propositions SET p_text = 'zert', correct = '0' WHERE question_id = '53' AND p_order= '4'
+2019-10-18T09:28:45.909758Z	  285 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:28:45.910151Z	  285 Query	SET NAMES utf8
+2019-10-18T09:28:45.910510Z	  284 Quit	
+2019-10-18T09:28:45.910719Z	  285 Query	UPDATE propositions SET p_text = '', correct = '0' WHERE question_id = '53' AND p_order= '5'
+2019-10-18T09:28:45.920737Z	  286 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:28:45.921314Z	  286 Query	SET NAMES utf8
+2019-10-18T09:28:45.921687Z	  280 Quit	
+2019-10-18T09:28:45.921934Z	  286 Query	UPDATE questions SET q_text= 'zertze' WHERE session_id= '9' AND q_order= '8'
+2019-10-18T09:28:45.933470Z	  287 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:28:45.933683Z	  287 Query	SET NAMES utf8
+2019-10-18T09:28:45.933897Z	  285 Quit	
+2019-10-18T09:28:45.933939Z	  287 Query	UPDATE propositions SET p_text = 'tzert', correct = '0' WHERE question_id = '54' AND p_order= '1'
+2019-10-18T09:28:45.944425Z	  288 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:28:45.944642Z	  288 Query	SET NAMES utf8
+2019-10-18T09:28:45.944841Z	  287 Quit	
+2019-10-18T09:28:45.944938Z	  288 Query	UPDATE propositions SET p_text = 'zertzert', correct = '0' WHERE question_id = '54' AND p_order= '2'
+2019-10-18T09:28:45.958100Z	  289 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:28:45.958313Z	  289 Query	SET NAMES utf8
+2019-10-18T09:28:45.958510Z	  288 Quit	
+2019-10-18T09:28:45.958614Z	  289 Query	UPDATE propositions SET p_text = 'zertze', correct = '0' WHERE question_id = '54' AND p_order= '3'
+2019-10-18T09:28:45.968884Z	  290 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:28:45.969132Z	  290 Query	SET NAMES utf8
+2019-10-18T09:28:45.969344Z	  289 Quit	
+2019-10-18T09:28:45.969456Z	  290 Query	UPDATE propositions SET p_text = 'rtzertze', correct = '0' WHERE question_id = '54' AND p_order= '4'
+2019-10-18T09:28:45.982967Z	  291 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:28:45.983278Z	  291 Query	SET NAMES utf8
+2019-10-18T09:28:45.983539Z	  290 Quit	
+2019-10-18T09:28:45.983666Z	  291 Query	UPDATE propositions SET p_text = 'rtzrt', correct = '0' WHERE question_id = '54' AND p_order= '5'
+2019-10-18T09:28:45.993760Z	  292 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:28:45.994067Z	  292 Query	SET NAMES utf8
+2019-10-18T09:28:45.994346Z	  243 Quit	
+2019-10-18T09:28:45.994482Z	  292 Query	SELECT * FROM sessions WHERE id="9"
+2019-10-18T09:28:45.996888Z	  293 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:28:45.997201Z	  293 Query	SET NAMES utf8
+2019-10-18T09:28:45.997532Z	  293 Query	SELECT * FROM questions WHERE session_id LIKE 9 ORDER BY q_order
+2019-10-18T09:28:45.997748Z	  286 Quit	
+2019-10-18T09:28:45.998590Z	  294 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:28:45.998897Z	  294 Query	SET NAMES utf8
+2019-10-18T09:28:45.999193Z	  291 Quit	
+2019-10-18T09:28:45.999317Z	  294 Query	SELECT * FROM propositions WHERE question_id LIKE 49 ORDER BY p_order
+2019-10-18T09:28:46.000536Z	  295 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:28:46.000828Z	  295 Query	SET NAMES utf8
+2019-10-18T09:28:46.001108Z	  294 Quit	
+2019-10-18T09:28:46.001258Z	  295 Query	SELECT * FROM propositions WHERE question_id LIKE 37 ORDER BY p_order
+2019-10-18T09:28:46.002485Z	  296 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:28:46.002763Z	  296 Query	SET NAMES utf8
+2019-10-18T09:28:46.003089Z	  295 Quit	
+2019-10-18T09:28:46.003286Z	  296 Query	SELECT * FROM propositions WHERE question_id LIKE 50 ORDER BY p_order
+2019-10-18T09:28:46.005352Z	  297 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:28:46.005633Z	  297 Query	SET NAMES utf8
+2019-10-18T09:28:46.005940Z	  296 Quit	
+2019-10-18T09:28:46.006098Z	  297 Query	SELECT * FROM propositions WHERE question_id LIKE 51 ORDER BY p_order
+2019-10-18T09:28:46.007573Z	  298 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:28:46.007988Z	  298 Query	SET NAMES utf8
+2019-10-18T09:28:46.008294Z	  297 Quit	
+2019-10-18T09:28:46.008523Z	  298 Query	SELECT * FROM propositions WHERE question_id LIKE 48 ORDER BY p_order
+2019-10-18T09:28:46.010130Z	  299 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:28:46.010444Z	  299 Query	SET NAMES utf8
+2019-10-18T09:28:46.010770Z	  298 Quit	
+2019-10-18T09:28:46.010810Z	  299 Query	SELECT * FROM propositions WHERE question_id LIKE 52 ORDER BY p_order
+2019-10-18T09:28:46.012050Z	  300 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:28:46.012326Z	  300 Query	SET NAMES utf8
+2019-10-18T09:28:46.012617Z	  299 Quit	
+2019-10-18T09:28:46.012745Z	  300 Query	SELECT * FROM propositions WHERE question_id LIKE 53 ORDER BY p_order
+2019-10-18T09:28:46.014149Z	  301 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:28:46.014687Z	  301 Query	SET NAMES utf8
+2019-10-18T09:28:46.015039Z	  300 Quit	
+2019-10-18T09:28:46.015206Z	  301 Query	SELECT * FROM propositions WHERE question_id LIKE 54 ORDER BY p_order
+2019-10-18T09:28:46.015898Z	  240 Quit	
+2019-10-18T09:28:46.016028Z	  293 Quit	
+2019-10-18T09:28:46.016216Z	  301 Quit	
+2019-10-18T09:28:46.016434Z	  241 Quit	
+2019-10-18T09:28:46.016656Z	  292 Quit	
+2019-10-18T09:28:46.022789Z	  302 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:28:46.023074Z	  302 Query	SET NAMES utf8
+2019-10-18T09:28:46.023376Z	  302 Query	SELECT * FROM config WHERE type = 'auth' AND name = 'moodle'
+2019-10-18T09:28:46.026222Z	  303 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:28:46.026481Z	  303 Query	SET NAMES utf8
+2019-10-18T09:28:46.026734Z	  303 Query	SELECT * FROM lang
+2019-10-18T09:28:46.030413Z	  302 Quit	
+2019-10-18T09:28:46.031063Z	  304 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:28:46.031328Z	  304 Query	SET NAMES utf8
+2019-10-18T09:28:46.031595Z	  304 Query	SELECT * FROM config WHERE type = 'view' AND name = 'background'
+2019-10-18T09:28:46.035793Z	  305 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:28:46.036020Z	  305 Query	SET NAMES utf8
+2019-10-18T09:28:46.036185Z	  305 Query	SELECT * FROM sessions WHERE user_id="1"
+2019-10-18T09:28:46.038793Z	  306 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:28:46.039000Z	  306 Query	SET NAMES utf8
+2019-10-18T09:28:46.039197Z	  306 Query	SELECT count(*) AS COUNT FROM reponses WHERE question_id IN(SELECT id FROM questions WHERE session_id =1 GROUP BY session_id)
+2019-10-18T09:28:46.040939Z	  307 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:28:46.041079Z	  307 Query	SET NAMES utf8
+2019-10-18T09:28:46.041213Z	  306 Quit	
+2019-10-18T09:28:46.041267Z	  307 Query	SELECT count(*) AS COUNT FROM reponses WHERE question_id IN(SELECT id FROM questions WHERE session_id =9 GROUP BY session_id)
+2019-10-18T09:28:46.041780Z	  308 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:28:46.041924Z	  308 Query	SET NAMES utf8
+2019-10-18T09:28:46.042075Z	  307 Quit	
+2019-10-18T09:28:46.042134Z	  308 Query	SELECT count(*) AS COUNT FROM reponses WHERE question_id IN(SELECT id FROM questions WHERE session_id =10 GROUP BY session_id)
+2019-10-18T09:28:46.042653Z	  303 Quit	
+2019-10-18T09:28:46.042715Z	  305 Quit	
+2019-10-18T09:28:46.043034Z	  304 Quit	
+2019-10-18T09:28:46.043108Z	  308 Quit	
+2019-10-18T09:30:56.870118Z	  309 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:30:56.870799Z	  309 Query	SET NAMES utf8
+2019-10-18T09:30:56.870958Z	  309 Query	SELECT * FROM config WHERE type = 'auth' AND name = 'moodle'
+2019-10-18T09:30:56.871964Z	  310 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:30:56.872078Z	  310 Query	SET NAMES utf8
+2019-10-18T09:30:56.872187Z	  310 Query	SELECT * FROM lang
+2019-10-18T09:30:56.896338Z	  309 Quit	
+2019-10-18T09:30:56.896719Z	  311 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:30:56.896851Z	  311 Query	SET NAMES utf8
+2019-10-18T09:30:56.896991Z	  311 Query	SELECT * FROM config WHERE type = 'view' AND name = 'background'
+2019-10-18T09:30:56.899843Z	  312 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:30:56.899981Z	  312 Query	SET NAMES utf8
+2019-10-18T09:30:56.900098Z	  312 Query	SELECT COUNT(*) FROM `questions` WHERE session_id = 9
+2019-10-18T09:30:56.900552Z	  313 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:30:56.900666Z	  313 Query	SET NAMES utf8
+2019-10-18T09:30:56.900781Z	  313 Query	SELECT * FROM sessions WHERE id="9"
+2019-10-18T09:30:56.902294Z	  314 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:30:56.902438Z	  314 Query	SET NAMES utf8
+2019-10-18T09:30:56.902556Z	  312 Quit	
+2019-10-18T09:30:56.902817Z	  314 Query	SELECT * FROM questions WHERE session_id LIKE 9 ORDER BY q_order
+2019-10-18T09:30:56.905065Z	  315 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:30:56.905204Z	  315 Query	SET NAMES utf8
+2019-10-18T09:30:56.905350Z	  315 Query	SELECT * FROM propositions WHERE question_id LIKE 49 ORDER BY p_order
+2019-10-18T09:30:56.906836Z	  316 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:30:56.906974Z	  316 Query	SET NAMES utf8
+2019-10-18T09:30:56.907095Z	  315 Quit	
+2019-10-18T09:30:56.907178Z	  316 Query	SELECT * FROM propositions WHERE question_id LIKE 37 ORDER BY p_order
+2019-10-18T09:30:56.907761Z	  317 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:30:56.907878Z	  317 Query	SET NAMES utf8
+2019-10-18T09:30:56.907987Z	  316 Quit	
+2019-10-18T09:30:56.908057Z	  317 Query	SELECT * FROM propositions WHERE question_id LIKE 50 ORDER BY p_order
+2019-10-18T09:30:56.908723Z	  318 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:30:56.908845Z	  318 Query	SET NAMES utf8
+2019-10-18T09:30:56.908963Z	  317 Quit	
+2019-10-18T09:30:56.909033Z	  318 Query	SELECT * FROM propositions WHERE question_id LIKE 51 ORDER BY p_order
+2019-10-18T09:30:56.909576Z	  319 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:30:56.909689Z	  319 Query	SET NAMES utf8
+2019-10-18T09:30:56.909795Z	  318 Quit	
+2019-10-18T09:30:56.909860Z	  319 Query	SELECT * FROM propositions WHERE question_id LIKE 48 ORDER BY p_order
+2019-10-18T09:30:56.910517Z	  320 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:30:56.910629Z	  320 Query	SET NAMES utf8
+2019-10-18T09:30:56.910734Z	  319 Quit	
+2019-10-18T09:30:56.910799Z	  320 Query	SELECT * FROM propositions WHERE question_id LIKE 52 ORDER BY p_order
+2019-10-18T09:30:56.911326Z	  321 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:30:56.911437Z	  321 Query	SET NAMES utf8
+2019-10-18T09:30:56.911541Z	  320 Quit	
+2019-10-18T09:30:56.911604Z	  321 Query	SELECT * FROM propositions WHERE question_id LIKE 53 ORDER BY p_order
+2019-10-18T09:30:56.912241Z	  322 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:30:56.912360Z	  322 Query	SET NAMES utf8
+2019-10-18T09:30:56.912468Z	  321 Quit	
+2019-10-18T09:30:56.912531Z	  322 Query	SELECT * FROM propositions WHERE question_id LIKE 54 ORDER BY p_order
+2019-10-18T09:30:56.912818Z	  310 Quit	
+2019-10-18T09:30:56.912876Z	  314 Quit	
+2019-10-18T09:30:56.912947Z	  313 Quit	
+2019-10-18T09:30:56.913002Z	  322 Quit	
+2019-10-18T09:30:56.913362Z	  311 Quit	
+2019-10-18T09:31:00.737291Z	  323 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:31:00.739752Z	  323 Query	SET NAMES utf8
+2019-10-18T09:31:00.740172Z	  323 Query	SELECT * FROM config WHERE type = 'auth' AND name = 'moodle'
+2019-10-18T09:31:00.742303Z	  324 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:31:00.742433Z	  324 Query	SET NAMES utf8
+2019-10-18T09:31:00.742576Z	  324 Query	SELECT * FROM lang
+2019-10-18T09:31:00.775657Z	  323 Quit	
+2019-10-18T09:31:00.776045Z	  325 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:31:00.776174Z	  325 Query	SET NAMES utf8
+2019-10-18T09:31:00.776333Z	  325 Query	SELECT * FROM config WHERE type = 'view' AND name = 'background'
+2019-10-18T09:31:00.779477Z	  326 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:31:00.779596Z	  326 Query	SET NAMES utf8
+2019-10-18T09:31:00.779724Z	  326 Query	SELECT COUNT(*) FROM `questions` WHERE session_id = 9
+2019-10-18T09:31:00.780227Z	  327 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:31:00.780346Z	  327 Query	SET NAMES utf8
+2019-10-18T09:31:00.780476Z	  327 Query	UPDATE sessions SET title="azer" WHERE id=9
+2019-10-18T09:31:00.883983Z	  328 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:31:00.884191Z	  328 Query	SET NAMES utf8
+2019-10-18T09:31:00.884341Z	  326 Quit	
+2019-10-18T09:31:00.884402Z	  328 Query	UPDATE questions SET q_text= 'zerazer' WHERE session_id= '9' AND q_order= '1'
+2019-10-18T09:31:00.894540Z	  329 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:31:00.894787Z	  329 Query	SET NAMES utf8
+2019-10-18T09:31:00.894962Z	  329 Query	UPDATE propositions SET p_text = 'azere', correct = '0' WHERE question_id = '49' AND p_order= '1'
+2019-10-18T09:31:00.909576Z	  330 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:31:00.910341Z	  330 Query	SET NAMES utf8
+2019-10-18T09:31:00.911058Z	  329 Quit	
+2019-10-18T09:31:00.911334Z	  330 Query	UPDATE propositions SET p_text = 'azerazer', correct = '0' WHERE question_id = '49' AND p_order= '2'
+2019-10-18T09:31:00.928125Z	  331 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:31:00.928912Z	  331 Query	SET NAMES utf8
+2019-10-18T09:31:00.929605Z	  330 Quit	
+2019-10-18T09:31:00.930018Z	  331 Query	UPDATE propositions SET p_text = 'azer', correct = '0' WHERE question_id = '49' AND p_order= '3'
+2019-10-18T09:31:00.944781Z	  332 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:31:00.945517Z	  332 Query	SET NAMES utf8
+2019-10-18T09:31:00.946231Z	  331 Quit	
+2019-10-18T09:31:00.946585Z	  332 Query	UPDATE propositions SET p_text = 'azer', correct = '0' WHERE question_id = '49' AND p_order= '4'
+2019-10-18T09:31:00.960772Z	  333 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:31:00.961461Z	  333 Query	SET NAMES utf8
+2019-10-18T09:31:00.961967Z	  332 Quit	
+2019-10-18T09:31:00.962221Z	  333 Query	UPDATE propositions SET p_text = '', correct = '0' WHERE question_id = '49' AND p_order= '5'
+2019-10-18T09:31:00.976372Z	  334 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:31:00.976934Z	  334 Query	SET NAMES utf8
+2019-10-18T09:31:00.977438Z	  328 Quit	
+2019-10-18T09:31:00.977748Z	  334 Query	UPDATE questions SET q_text= 'fdghdfgh' WHERE session_id= '9' AND q_order= '2'
+2019-10-18T09:31:00.992791Z	  335 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:31:00.993336Z	  335 Query	SET NAMES utf8
+2019-10-18T09:31:00.993870Z	  333 Quit	
+2019-10-18T09:31:00.994074Z	  335 Query	UPDATE propositions SET p_text = 'fdghdfgh', correct = '0' WHERE question_id = '37' AND p_order= '1'
+2019-10-18T09:31:01.014557Z	  336 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:31:01.015053Z	  336 Query	SET NAMES utf8
+2019-10-18T09:31:01.015516Z	  335 Quit	
+2019-10-18T09:31:01.015754Z	  336 Query	UPDATE propositions SET p_text = 'dfghdfgh', correct = '0' WHERE question_id = '37' AND p_order= '2'
+2019-10-18T09:31:01.030791Z	  337 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:31:01.031328Z	  337 Query	SET NAMES utf8
+2019-10-18T09:31:01.031820Z	  336 Quit	
+2019-10-18T09:31:01.032022Z	  337 Query	UPDATE propositions SET p_text = 'dfghdfgh', correct = '0' WHERE question_id = '37' AND p_order= '3'
+2019-10-18T09:31:01.049865Z	  338 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:31:01.050440Z	  338 Query	SET NAMES utf8
+2019-10-18T09:31:01.050939Z	  337 Quit	
+2019-10-18T09:31:01.051235Z	  338 Query	UPDATE propositions SET p_text = 'dfghdfgh', correct = '0' WHERE question_id = '37' AND p_order= '4'
+2019-10-18T09:31:01.066522Z	  339 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:31:01.067081Z	  339 Query	SET NAMES utf8
+2019-10-18T09:31:01.067589Z	  338 Quit	
+2019-10-18T09:31:01.067849Z	  339 Query	UPDATE propositions SET p_text = 'dfghdfgh', correct = '0' WHERE question_id = '37' AND p_order= '5'
+2019-10-18T09:31:01.082746Z	  340 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:31:01.083295Z	  340 Query	SET NAMES utf8
+2019-10-18T09:31:01.083801Z	  334 Quit	
+2019-10-18T09:31:01.084065Z	  340 Query	UPDATE questions SET q_text= 'ze' WHERE session_id= '9' AND q_order= '3'
+2019-10-18T09:31:01.098765Z	  341 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:31:01.099299Z	  341 Query	SET NAMES utf8
+2019-10-18T09:31:01.099811Z	  339 Quit	
+2019-10-18T09:31:01.100066Z	  341 Query	UPDATE propositions SET p_text = 'azerazer', correct = '0' WHERE question_id = '50' AND p_order= '1'
+2019-10-18T09:31:01.120553Z	  342 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:31:01.120798Z	  342 Query	SET NAMES utf8
+2019-10-18T09:31:01.121018Z	  341 Quit	
+2019-10-18T09:31:01.121129Z	  342 Query	UPDATE propositions SET p_text = 'zerazer', correct = '0' WHERE question_id = '50' AND p_order= '2'
+2019-10-18T09:31:01.130427Z	  343 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:31:01.130654Z	  343 Query	SET NAMES utf8
+2019-10-18T09:31:01.130889Z	  343 Query	UPDATE propositions SET p_text = 'aer', correct = '0' WHERE question_id = '50' AND p_order= '3'
+2019-10-18T09:31:01.130853Z	  342 Quit	
+2019-10-18T09:31:01.144601Z	  344 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:31:01.144858Z	  344 Query	SET NAMES utf8
+2019-10-18T09:31:01.145048Z	  343 Quit	
+2019-10-18T09:31:01.145144Z	  344 Query	UPDATE propositions SET p_text = '', correct = '0' WHERE question_id = '50' AND p_order= '4'
+2019-10-18T09:31:01.155018Z	  345 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:31:01.155230Z	  345 Query	SET NAMES utf8
+2019-10-18T09:31:01.155458Z	  345 Query	UPDATE propositions SET p_text = '', correct = '0' WHERE question_id = '50' AND p_order= '5'
+2019-10-18T09:31:01.155708Z	  344 Quit	
+2019-10-18T09:31:01.168962Z	  346 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:31:01.169223Z	  346 Query	SET NAMES utf8
+2019-10-18T09:31:01.169821Z	  340 Quit	
+2019-10-18T09:31:01.169981Z	  346 Query	UPDATE questions SET q_text= 'zer' WHERE session_id= '9' AND q_order= '4'
+2019-10-18T09:31:01.179000Z	  347 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:31:01.179172Z	  347 Query	SET NAMES utf8
+2019-10-18T09:31:01.179334Z	  345 Quit	
+2019-10-18T09:31:01.179418Z	  347 Query	UPDATE propositions SET p_text = 'aer', correct = '0' WHERE question_id = '51' AND p_order= '1'
+2019-10-18T09:31:01.193329Z	  348 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:31:01.193552Z	  348 Query	SET NAMES utf8
+2019-10-18T09:31:01.193827Z	  348 Query	UPDATE propositions SET p_text = 'azer', correct = '0' WHERE question_id = '51' AND p_order= '2'
+2019-10-18T09:31:01.194081Z	  347 Quit	
+2019-10-18T09:31:01.204576Z	  349 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:31:01.204833Z	  349 Query	SET NAMES utf8
+2019-10-18T09:31:01.205082Z	  348 Quit	
+2019-10-18T09:31:01.205198Z	  349 Query	UPDATE propositions SET p_text = 'azer', correct = '0' WHERE question_id = '51' AND p_order= '3'
+2019-10-18T09:31:01.218737Z	  350 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:31:01.219109Z	  350 Query	SET NAMES utf8
+2019-10-18T09:31:01.219436Z	  349 Quit	
+2019-10-18T09:31:01.219602Z	  350 Query	UPDATE propositions SET p_text = '', correct = '0' WHERE question_id = '51' AND p_order= '4'
+2019-10-18T09:31:01.229499Z	  351 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:31:01.229893Z	  351 Query	SET NAMES utf8
+2019-10-18T09:31:01.230314Z	  350 Quit	
+2019-10-18T09:31:01.230502Z	  351 Query	UPDATE propositions SET p_text = '', correct = '0' WHERE question_id = '51' AND p_order= '5'
+2019-10-18T09:31:01.243020Z	  352 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:31:01.243413Z	  352 Query	SET NAMES utf8
+2019-10-18T09:31:01.243775Z	  346 Quit	
+2019-10-18T09:31:01.244000Z	  352 Query	UPDATE questions SET q_text= 'ertye' WHERE session_id= '9' AND q_order= '5'
+2019-10-18T09:31:01.262047Z	  353 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:31:01.262444Z	  353 Query	SET NAMES utf8
+2019-10-18T09:31:01.262839Z	  351 Quit	
+2019-10-18T09:31:01.263026Z	  353 Query	UPDATE propositions SET p_text = 'trye', correct = '0' WHERE question_id = '48' AND p_order= '1'
+2019-10-18T09:31:01.276065Z	  354 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:31:01.276485Z	  354 Query	SET NAMES utf8
+2019-10-18T09:31:01.276848Z	  353 Quit	
+2019-10-18T09:31:01.277041Z	  354 Query	UPDATE propositions SET p_text = 'ertye', correct = '0' WHERE question_id = '48' AND p_order= '2'
+2019-10-18T09:31:01.295374Z	  355 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:31:01.295853Z	  355 Query	SET NAMES utf8
+2019-10-18T09:31:01.296274Z	  354 Quit	
+2019-10-18T09:31:01.296539Z	  355 Query	UPDATE propositions SET p_text = 'tyerty', correct = '0' WHERE question_id = '48' AND p_order= '3'
+2019-10-18T09:31:01.311521Z	  356 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:31:01.311977Z	  356 Query	SET NAMES utf8
+2019-10-18T09:31:01.312406Z	  355 Quit	
+2019-10-18T09:31:01.312697Z	  356 Query	UPDATE propositions SET p_text = 'ertyer', correct = '0' WHERE question_id = '48' AND p_order= '4'
+2019-10-18T09:31:01.333505Z	  357 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:31:01.334122Z	  357 Query	SET NAMES utf8
+2019-10-18T09:31:01.334660Z	  356 Quit	
+2019-10-18T09:31:01.334992Z	  357 Query	UPDATE propositions SET p_text = 'tyerty', correct = '0' WHERE question_id = '48' AND p_order= '5'
+2019-10-18T09:31:01.350441Z	  358 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:31:01.351021Z	  358 Query	SET NAMES utf8
+2019-10-18T09:31:01.351554Z	  352 Quit	
+2019-10-18T09:31:01.351834Z	  358 Query	UPDATE questions SET q_text= 'sdfg' WHERE session_id= '9' AND q_order= '6'
+2019-10-18T09:31:01.369234Z	  359 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:31:01.369856Z	  359 Query	SET NAMES utf8
+2019-10-18T09:31:01.370444Z	  357 Quit	
+2019-10-18T09:31:01.370746Z	  359 Query	UPDATE propositions SET p_text = 'sdfg', correct = '0' WHERE question_id = '52' AND p_order= '1'
+2019-10-18T09:31:01.385382Z	  360 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:31:01.385883Z	  360 Query	SET NAMES utf8
+2019-10-18T09:31:01.386440Z	  359 Quit	
+2019-10-18T09:31:01.386807Z	  360 Query	UPDATE propositions SET p_text = 'sdfg', correct = '0' WHERE question_id = '52' AND p_order= '2'
+2019-10-18T09:31:01.401689Z	  361 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:31:01.402269Z	  361 Query	SET NAMES utf8
+2019-10-18T09:31:01.402882Z	  360 Quit	
+2019-10-18T09:31:01.403197Z	  361 Query	UPDATE propositions SET p_text = 'sdfg', correct = '0' WHERE question_id = '52' AND p_order= '3'
+2019-10-18T09:31:01.417096Z	  362 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:31:01.417474Z	  362 Query	SET NAMES utf8
+2019-10-18T09:31:01.417805Z	  361 Quit	
+2019-10-18T09:31:01.417973Z	  362 Query	UPDATE propositions SET p_text = 'sdfg', correct = '0' WHERE question_id = '52' AND p_order= '4'
+2019-10-18T09:31:01.431110Z	  363 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:31:01.431499Z	  363 Query	SET NAMES utf8
+2019-10-18T09:31:01.431865Z	  362 Quit	
+2019-10-18T09:31:01.432040Z	  363 Query	UPDATE propositions SET p_text = '', correct = '0' WHERE question_id = '52' AND p_order= '5'
+2019-10-18T09:31:01.441656Z	  364 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:31:01.442012Z	  364 Query	SET NAMES utf8
+2019-10-18T09:31:01.442321Z	  358 Quit	
+2019-10-18T09:31:01.442477Z	  364 Query	UPDATE questions SET q_text= 'zertzert' WHERE session_id= '9' AND q_order= '7'
+2019-10-18T09:31:01.454809Z	  365 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:31:01.455047Z	  365 Query	SET NAMES utf8
+2019-10-18T09:31:01.455273Z	  363 Quit	
+2019-10-18T09:31:01.455385Z	  365 Query	UPDATE propositions SET p_text = 'zert', correct = '0' WHERE question_id = '53' AND p_order= '1'
+2019-10-18T09:31:01.465569Z	  366 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:31:01.465742Z	  366 Query	SET NAMES utf8
+2019-10-18T09:31:01.465946Z	  365 Quit	
+2019-10-18T09:31:01.466036Z	  366 Query	UPDATE propositions SET p_text = 'ezrt', correct = '0' WHERE question_id = '53' AND p_order= '2'
+2019-10-18T09:31:01.479319Z	  367 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:31:01.479526Z	  367 Query	SET NAMES utf8
+2019-10-18T09:31:01.479715Z	  366 Quit	
+2019-10-18T09:31:01.479814Z	  367 Query	UPDATE propositions SET p_text = 'zert', correct = '0' WHERE question_id = '53' AND p_order= '3'
+2019-10-18T09:31:01.490201Z	  368 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:31:01.490405Z	  368 Query	SET NAMES utf8
+2019-10-18T09:31:01.490584Z	  367 Quit	
+2019-10-18T09:31:01.490671Z	  368 Query	UPDATE propositions SET p_text = 'zert', correct = '0' WHERE question_id = '53' AND p_order= '4'
+2019-10-18T09:31:01.503796Z	  369 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:31:01.504115Z	  369 Query	SET NAMES utf8
+2019-10-18T09:31:01.504514Z	  368 Quit	
+2019-10-18T09:31:01.504831Z	  369 Query	UPDATE propositions SET p_text = '', correct = '0' WHERE question_id = '53' AND p_order= '5'
+2019-10-18T09:31:01.514520Z	  370 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:31:01.514731Z	  370 Query	SET NAMES utf8
+2019-10-18T09:31:01.514926Z	  364 Quit	
+2019-10-18T09:31:01.515018Z	  370 Query	UPDATE questions SET q_text= 'zertze' WHERE session_id= '9' AND q_order= '8'
+2019-10-18T09:31:01.528364Z	  371 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:31:01.528583Z	  371 Query	SET NAMES utf8
+2019-10-18T09:31:01.528782Z	  369 Quit	
+2019-10-18T09:31:01.528879Z	  371 Query	UPDATE propositions SET p_text = 'tzert', correct = '0' WHERE question_id = '54' AND p_order= '1'
+2019-10-18T09:31:01.539187Z	  372 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:31:01.540344Z	  372 Query	SET NAMES utf8
+2019-10-18T09:31:01.540499Z	  371 Quit	
+2019-10-18T09:31:01.540585Z	  372 Query	UPDATE propositions SET p_text = 'zertzert', correct = '0' WHERE question_id = '54' AND p_order= '2'
+2019-10-18T09:31:01.553005Z	  373 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:31:01.553711Z	  373 Query	SET NAMES utf8
+2019-10-18T09:31:01.554229Z	  372 Quit	
+2019-10-18T09:31:01.554381Z	  373 Query	UPDATE propositions SET p_text = 'zertze', correct = '0' WHERE question_id = '54' AND p_order= '3'
+2019-10-18T09:31:01.563921Z	  374 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:31:01.564172Z	  374 Query	SET NAMES utf8
+2019-10-18T09:31:01.564389Z	  373 Quit	
+2019-10-18T09:31:01.564529Z	  374 Query	UPDATE propositions SET p_text = 'rtzertze', correct = '0' WHERE question_id = '54' AND p_order= '4'
+2019-10-18T09:31:01.577367Z	  375 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:31:01.577545Z	  375 Query	SET NAMES utf8
+2019-10-18T09:31:01.577709Z	  374 Quit	
+2019-10-18T09:31:01.577796Z	  375 Query	UPDATE propositions SET p_text = 'rtzrt', correct = '0' WHERE question_id = '54' AND p_order= '5'
+2019-10-18T09:31:01.588909Z	  376 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:31:01.589258Z	  376 Query	SET NAMES utf8
+2019-10-18T09:31:01.589431Z	  327 Quit	
+2019-10-18T09:31:01.589541Z	  376 Query	SELECT * FROM sessions WHERE id="9"
+2019-10-18T09:31:01.592711Z	  377 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:31:01.592913Z	  377 Query	SET NAMES utf8
+2019-10-18T09:31:01.593084Z	  377 Query	SELECT * FROM questions WHERE session_id LIKE 9 ORDER BY q_order
+2019-10-18T09:31:01.593228Z	  370 Quit	
+2019-10-18T09:31:01.593651Z	  378 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:31:01.593793Z	  378 Query	SET NAMES utf8
+2019-10-18T09:31:01.593938Z	  375 Quit	
+2019-10-18T09:31:01.594007Z	  378 Query	SELECT * FROM propositions WHERE question_id LIKE 49 ORDER BY p_order
+2019-10-18T09:31:01.594769Z	  379 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:31:01.594941Z	  379 Query	SET NAMES utf8
+2019-10-18T09:31:01.595090Z	  378 Quit	
+2019-10-18T09:31:01.595160Z	  379 Query	SELECT * FROM propositions WHERE question_id LIKE 37 ORDER BY p_order
+2019-10-18T09:31:01.595917Z	  380 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:31:01.596083Z	  380 Query	SET NAMES utf8
+2019-10-18T09:31:01.596240Z	  380 Query	SELECT * FROM propositions WHERE question_id LIKE 50 ORDER BY p_order
+2019-10-18T09:31:01.596395Z	  379 Quit	
+2019-10-18T09:31:01.597042Z	  381 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:31:01.597185Z	  381 Query	SET NAMES utf8
+2019-10-18T09:31:01.597299Z	  380 Quit	
+2019-10-18T09:31:01.597387Z	  381 Query	SELECT * FROM propositions WHERE question_id LIKE 51 ORDER BY p_order
+2019-10-18T09:31:01.598295Z	  382 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:31:01.598575Z	  382 Query	SET NAMES utf8
+2019-10-18T09:31:01.598706Z	  381 Quit	
+2019-10-18T09:31:01.598843Z	  382 Query	SELECT * FROM propositions WHERE question_id LIKE 48 ORDER BY p_order
+2019-10-18T09:31:01.599743Z	  383 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:31:01.599947Z	  383 Query	SET NAMES utf8
+2019-10-18T09:31:01.600103Z	  382 Quit	
+2019-10-18T09:31:01.600188Z	  383 Query	SELECT * FROM propositions WHERE question_id LIKE 52 ORDER BY p_order
+2019-10-18T09:31:01.600951Z	  384 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:31:01.601072Z	  384 Query	SET NAMES utf8
+2019-10-18T09:31:01.601231Z	  383 Quit	
+2019-10-18T09:31:01.601302Z	  384 Query	SELECT * FROM propositions WHERE question_id LIKE 53 ORDER BY p_order
+2019-10-18T09:31:01.602011Z	  385 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:31:01.602181Z	  385 Query	SET NAMES utf8
+2019-10-18T09:31:01.602344Z	  384 Quit	
+2019-10-18T09:31:01.602479Z	  385 Query	SELECT * FROM propositions WHERE question_id LIKE 54 ORDER BY p_order
+2019-10-18T09:31:01.603709Z	  324 Quit	
+2019-10-18T09:31:01.604325Z	  325 Quit	
+2019-10-18T09:31:01.604350Z	  377 Quit	
+2019-10-18T09:31:01.604521Z	  385 Quit	
+2019-10-18T09:31:01.604577Z	  376 Quit	
+2019-10-18T09:31:01.618304Z	  386 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:31:01.618486Z	  386 Query	SET NAMES utf8
+2019-10-18T09:31:01.618683Z	  386 Query	SELECT * FROM config WHERE type = 'auth' AND name = 'moodle'
+2019-10-18T09:31:01.619411Z	  387 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:31:01.619748Z	  387 Query	SET NAMES utf8
+2019-10-18T09:31:01.620062Z	  387 Query	SELECT * FROM lang
+2019-10-18T09:31:01.621749Z	  386 Quit	
+2019-10-18T09:31:01.622188Z	  388 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:31:01.622409Z	  388 Query	SET NAMES utf8
+2019-10-18T09:31:01.622675Z	  388 Query	SELECT * FROM config WHERE type = 'view' AND name = 'background'
+2019-10-18T09:31:01.625710Z	  389 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:31:01.625864Z	  389 Query	SET NAMES utf8
+2019-10-18T09:31:01.625989Z	  389 Query	SELECT * FROM sessions WHERE user_id="1"
+2019-10-18T09:31:01.626513Z	  390 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:31:01.626628Z	  390 Query	SET NAMES utf8
+2019-10-18T09:31:01.626758Z	  390 Query	SELECT count(*) AS COUNT FROM reponses WHERE question_id IN(SELECT id FROM questions WHERE session_id =1 GROUP BY session_id)
+2019-10-18T09:31:01.628121Z	  391 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:31:01.628252Z	  391 Query	SET NAMES utf8
+2019-10-18T09:31:01.628357Z	  390 Quit	
+2019-10-18T09:31:01.628406Z	  391 Query	SELECT count(*) AS COUNT FROM reponses WHERE question_id IN(SELECT id FROM questions WHERE session_id =9 GROUP BY session_id)
+2019-10-18T09:31:01.628859Z	  392 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:31:01.628971Z	  392 Query	SET NAMES utf8
+2019-10-18T09:31:01.629075Z	  391 Quit	
+2019-10-18T09:31:01.629124Z	  392 Query	SELECT count(*) AS COUNT FROM reponses WHERE question_id IN(SELECT id FROM questions WHERE session_id =10 GROUP BY session_id)
+2019-10-18T09:31:01.629618Z	  387 Quit	
+2019-10-18T09:31:01.629662Z	  392 Quit	
+2019-10-18T09:31:01.629675Z	  388 Quit	
+2019-10-18T09:31:01.629768Z	  389 Quit	
+2019-10-18T09:31:03.296285Z	  393 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:31:03.296856Z	  393 Query	SET NAMES utf8
+2019-10-18T09:31:03.296996Z	  393 Query	SELECT * FROM config WHERE type = 'auth' AND name = 'moodle'
+2019-10-18T09:31:03.297943Z	  394 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:31:03.298064Z	  394 Query	SET NAMES utf8
+2019-10-18T09:31:03.298193Z	  394 Query	SELECT * FROM lang
+2019-10-18T09:31:03.320938Z	  393 Quit	
+2019-10-18T09:31:03.321335Z	  395 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:31:03.321465Z	  395 Query	SET NAMES utf8
+2019-10-18T09:31:03.321608Z	  395 Query	SELECT * FROM config WHERE type = 'view' AND name = 'background'
+2019-10-18T09:31:03.324575Z	  396 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:31:03.324692Z	  396 Query	SET NAMES utf8
+2019-10-18T09:31:03.324813Z	  396 Query	SELECT COUNT(*) FROM `questions` WHERE session_id = 9
+2019-10-18T09:31:03.325275Z	  397 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:31:03.325390Z	  397 Query	SET NAMES utf8
+2019-10-18T09:31:03.325515Z	  397 Query	SELECT * FROM sessions WHERE id="9"
+2019-10-18T09:31:03.327056Z	  398 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:31:03.327171Z	  398 Query	SET NAMES utf8
+2019-10-18T09:31:03.327278Z	  396 Quit	
+2019-10-18T09:31:03.327349Z	  398 Query	SELECT * FROM questions WHERE session_id LIKE 9 ORDER BY q_order
+2019-10-18T09:31:03.328423Z	  399 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:31:03.328536Z	  399 Query	SET NAMES utf8
+2019-10-18T09:31:03.328652Z	  399 Query	SELECT * FROM propositions WHERE question_id LIKE 49 ORDER BY p_order
+2019-10-18T09:31:03.329996Z	  400 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:31:03.330176Z	  400 Query	SET NAMES utf8
+2019-10-18T09:31:03.330295Z	  399 Quit	
+2019-10-18T09:31:03.330355Z	  400 Query	SELECT * FROM propositions WHERE question_id LIKE 37 ORDER BY p_order
+2019-10-18T09:31:03.330946Z	  401 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:31:03.331074Z	  401 Query	SET NAMES utf8
+2019-10-18T09:31:03.331183Z	  400 Quit	
+2019-10-18T09:31:03.331253Z	  401 Query	SELECT * FROM propositions WHERE question_id LIKE 50 ORDER BY p_order
+2019-10-18T09:31:03.331990Z	  402 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:31:03.332143Z	  402 Query	SET NAMES utf8
+2019-10-18T09:31:03.332295Z	  401 Quit	
+2019-10-18T09:31:03.332347Z	  402 Query	SELECT * FROM propositions WHERE question_id LIKE 51 ORDER BY p_order
+2019-10-18T09:31:03.333000Z	  403 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:31:03.333170Z	  403 Query	SET NAMES utf8
+2019-10-18T09:31:03.333323Z	  402 Quit	
+2019-10-18T09:31:03.333396Z	  403 Query	SELECT * FROM propositions WHERE question_id LIKE 48 ORDER BY p_order
+2019-10-18T09:31:03.334093Z	  404 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:31:03.334244Z	  404 Query	SET NAMES utf8
+2019-10-18T09:31:03.334387Z	  403 Quit	
+2019-10-18T09:31:03.334436Z	  404 Query	SELECT * FROM propositions WHERE question_id LIKE 52 ORDER BY p_order
+2019-10-18T09:31:03.335083Z	  405 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:31:03.335256Z	  405 Query	SET NAMES utf8
+2019-10-18T09:31:03.335400Z	  404 Quit	
+2019-10-18T09:31:03.335469Z	  405 Query	SELECT * FROM propositions WHERE question_id LIKE 53 ORDER BY p_order
+2019-10-18T09:31:03.336615Z	  406 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:31:03.337037Z	  406 Query	SET NAMES utf8
+2019-10-18T09:31:03.337261Z	  405 Quit	
+2019-10-18T09:31:03.337346Z	  406 Query	SELECT * FROM propositions WHERE question_id LIKE 54 ORDER BY p_order
+2019-10-18T09:31:03.337725Z	  394 Quit	
+2019-10-18T09:31:03.337783Z	  398 Quit	
+2019-10-18T09:31:03.337832Z	  397 Quit	
+2019-10-18T09:31:03.337901Z	  395 Quit	
+2019-10-18T09:31:03.337946Z	  406 Quit	
+2019-10-18T09:31:06.767678Z	  407 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:31:06.768245Z	  407 Query	SET NAMES utf8
+2019-10-18T09:31:06.768380Z	  407 Query	SELECT * FROM config WHERE type = 'auth' AND name = 'moodle'
+2019-10-18T09:31:06.770557Z	  408 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:31:06.770749Z	  408 Query	SET NAMES utf8
+2019-10-18T09:31:06.770967Z	  408 Query	SELECT * FROM lang
+2019-10-18T09:31:06.797602Z	  407 Quit	
+2019-10-18T09:31:06.797953Z	  409 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:31:06.798080Z	  409 Query	SET NAMES utf8
+2019-10-18T09:31:06.798246Z	  409 Query	SELECT * FROM config WHERE type = 'view' AND name = 'background'
+2019-10-18T09:31:06.801465Z	  410 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:31:06.801601Z	  410 Query	SET NAMES utf8
+2019-10-18T09:31:06.801748Z	  410 Query	SELECT COUNT(*) FROM `questions` WHERE session_id = 9
+2019-10-18T09:31:06.802313Z	  411 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:31:06.802465Z	  411 Query	SET NAMES utf8
+2019-10-18T09:31:06.802692Z	  411 Query	UPDATE sessions SET title="azer" WHERE id=9
+2019-10-18T09:31:06.902152Z	  412 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:31:06.902406Z	  412 Query	SET NAMES utf8
+2019-10-18T09:31:06.902600Z	  410 Quit	
+2019-10-18T09:31:06.902963Z	  412 Query	UPDATE questions SET q_text= 'zerazer' WHERE session_id= '9' AND q_order= '1'
+2019-10-18T09:31:06.921686Z	  413 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:31:06.922208Z	  413 Query	SET NAMES utf8
+2019-10-18T09:31:06.922519Z	  413 Query	UPDATE propositions SET p_text = 'azere', correct = '0' WHERE question_id = '49' AND p_order= '1'
+2019-10-18T09:31:06.942017Z	  414 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:31:06.942240Z	  414 Query	SET NAMES utf8
+2019-10-18T09:31:06.942440Z	  413 Quit	
+2019-10-18T09:31:06.942502Z	  414 Query	UPDATE propositions SET p_text = 'azerazer', correct = '0' WHERE question_id = '49' AND p_order= '2'
+2019-10-18T09:31:06.951983Z	  415 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:31:06.952245Z	  415 Query	SET NAMES utf8
+2019-10-18T09:31:06.952427Z	  414 Quit	
+2019-10-18T09:31:06.952525Z	  415 Query	UPDATE propositions SET p_text = 'azer', correct = '0' WHERE question_id = '49' AND p_order= '3'
+2019-10-18T09:31:06.966374Z	  416 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:31:06.966637Z	  416 Query	SET NAMES utf8
+2019-10-18T09:31:06.966932Z	  416 Query	UPDATE propositions SET p_text = 'azer', correct = '0' WHERE question_id = '49' AND p_order= '4'
+2019-10-18T09:31:06.967220Z	  415 Quit	
+2019-10-18T09:31:06.977106Z	  417 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:31:06.977469Z	  417 Query	SET NAMES utf8
+2019-10-18T09:31:06.977787Z	  416 Quit	
+2019-10-18T09:31:06.977987Z	  417 Query	UPDATE propositions SET p_text = '', correct = '0' WHERE question_id = '49' AND p_order= '5'
+2019-10-18T09:31:06.991262Z	  418 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:31:06.991585Z	  418 Query	SET NAMES utf8
+2019-10-18T09:31:06.991925Z	  412 Quit	
+2019-10-18T09:31:06.992086Z	  418 Query	UPDATE questions SET q_text= 'fdghdfgh' WHERE session_id= '9' AND q_order= '2'
+2019-10-18T09:31:07.001654Z	  419 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:31:07.002051Z	  419 Query	SET NAMES utf8
+2019-10-18T09:31:07.002353Z	  417 Quit	
+2019-10-18T09:31:07.002478Z	  419 Query	UPDATE propositions SET p_text = 'fdghdfgh', correct = '0' WHERE question_id = '37' AND p_order= '1'
+2019-10-18T09:31:07.015669Z	  420 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:31:07.016009Z	  420 Query	SET NAMES utf8
+2019-10-18T09:31:07.016320Z	  419 Quit	
+2019-10-18T09:31:07.016483Z	  420 Query	UPDATE propositions SET p_text = 'dfghdfgh', correct = '0' WHERE question_id = '37' AND p_order= '2'
+2019-10-18T09:31:07.026194Z	  421 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:31:07.026557Z	  421 Query	SET NAMES utf8
+2019-10-18T09:31:07.026900Z	  420 Quit	
+2019-10-18T09:31:07.027044Z	  421 Query	UPDATE propositions SET p_text = 'dfghdfgh', correct = '0' WHERE question_id = '37' AND p_order= '3'
+2019-10-18T09:31:07.040315Z	  422 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:31:07.040673Z	  422 Query	SET NAMES utf8
+2019-10-18T09:31:07.040984Z	  421 Quit	
+2019-10-18T09:31:07.041144Z	  422 Query	UPDATE propositions SET p_text = 'dfghdfgh', correct = '0' WHERE question_id = '37' AND p_order= '4'
+2019-10-18T09:31:07.050327Z	  423 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:31:07.050582Z	  423 Query	SET NAMES utf8
+2019-10-18T09:31:07.050835Z	  422 Quit	
+2019-10-18T09:31:07.050949Z	  423 Query	UPDATE propositions SET p_text = 'dfghdfgh', correct = '0' WHERE question_id = '37' AND p_order= '5'
+2019-10-18T09:31:07.064268Z	  424 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:31:07.064500Z	  424 Query	SET NAMES utf8
+2019-10-18T09:31:07.064712Z	  418 Quit	
+2019-10-18T09:31:07.064821Z	  424 Query	UPDATE questions SET q_text= 'ze' WHERE session_id= '9' AND q_order= '3'
+2019-10-18T09:31:07.074769Z	  425 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:31:07.074984Z	  425 Query	SET NAMES utf8
+2019-10-18T09:31:07.075211Z	  423 Quit	
+2019-10-18T09:31:07.075308Z	  425 Query	UPDATE propositions SET p_text = 'azerazer', correct = '0' WHERE question_id = '50' AND p_order= '1'
+2019-10-18T09:31:07.088800Z	  426 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:31:07.089014Z	  426 Query	SET NAMES utf8
+2019-10-18T09:31:07.089207Z	  425 Quit	
+2019-10-18T09:31:07.089327Z	  426 Query	UPDATE propositions SET p_text = 'zerazer', correct = '0' WHERE question_id = '50' AND p_order= '2'
+2019-10-18T09:31:07.099454Z	  427 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:31:07.099672Z	  427 Query	SET NAMES utf8
+2019-10-18T09:31:07.099890Z	  426 Quit	
+2019-10-18T09:31:07.100000Z	  427 Query	UPDATE propositions SET p_text = 'aer', correct = '0' WHERE question_id = '50' AND p_order= '3'
+2019-10-18T09:31:07.113419Z	  428 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:31:07.113633Z	  428 Query	SET NAMES utf8
+2019-10-18T09:31:07.113826Z	  427 Quit	
+2019-10-18T09:31:07.113917Z	  428 Query	UPDATE propositions SET p_text = '', correct = '0' WHERE question_id = '50' AND p_order= '4'
+2019-10-18T09:31:07.123968Z	  429 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:31:07.124182Z	  429 Query	SET NAMES utf8
+2019-10-18T09:31:07.124357Z	  428 Quit	
+2019-10-18T09:31:07.124465Z	  429 Query	UPDATE propositions SET p_text = '', correct = '0' WHERE question_id = '50' AND p_order= '5'
+2019-10-18T09:31:07.138258Z	  430 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:31:07.138724Z	  430 Query	SET NAMES utf8
+2019-10-18T09:31:07.138950Z	  424 Quit	
+2019-10-18T09:31:07.139057Z	  430 Query	UPDATE questions SET q_text= 'zer' WHERE session_id= '9' AND q_order= '4'
+2019-10-18T09:31:07.148789Z	  431 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:31:07.149026Z	  431 Query	SET NAMES utf8
+2019-10-18T09:31:07.149249Z	  429 Quit	
+2019-10-18T09:31:07.149351Z	  431 Query	UPDATE propositions SET p_text = 'aer', correct = '0' WHERE question_id = '51' AND p_order= '1'
+2019-10-18T09:31:07.162719Z	  432 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:31:07.162960Z	  432 Query	SET NAMES utf8
+2019-10-18T09:31:07.163196Z	  431 Quit	
+2019-10-18T09:31:07.163313Z	  432 Query	UPDATE propositions SET p_text = 'azer', correct = '0' WHERE question_id = '51' AND p_order= '2'
+2019-10-18T09:31:07.173706Z	  433 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:31:07.174010Z	  433 Query	SET NAMES utf8
+2019-10-18T09:31:07.174322Z	  432 Quit	
+2019-10-18T09:31:07.174474Z	  433 Query	UPDATE propositions SET p_text = 'azer', correct = '0' WHERE question_id = '51' AND p_order= '3'
+2019-10-18T09:31:07.188597Z	  434 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:31:07.188965Z	  434 Query	SET NAMES utf8
+2019-10-18T09:31:07.189332Z	  433 Quit	
+2019-10-18T09:31:07.189497Z	  434 Query	UPDATE propositions SET p_text = '', correct = '0' WHERE question_id = '51' AND p_order= '4'
+2019-10-18T09:31:07.206344Z	  435 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:31:07.206758Z	  435 Query	SET NAMES utf8
+2019-10-18T09:31:07.207129Z	  434 Quit	
+2019-10-18T09:31:07.207319Z	  435 Query	UPDATE propositions SET p_text = '', correct = '0' WHERE question_id = '51' AND p_order= '5'
+2019-10-18T09:31:07.220171Z	  436 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:31:07.220645Z	  436 Query	SET NAMES utf8
+2019-10-18T09:31:07.221257Z	  430 Quit	
+2019-10-18T09:31:07.221472Z	  436 Query	UPDATE questions SET q_text= 'ertye' WHERE session_id= '9' AND q_order= '5'
+2019-10-18T09:31:07.230626Z	  437 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:31:07.231041Z	  437 Query	SET NAMES utf8
+2019-10-18T09:31:07.231408Z	  435 Quit	
+2019-10-18T09:31:07.231590Z	  437 Query	UPDATE propositions SET p_text = 'trye', correct = '0' WHERE question_id = '48' AND p_order= '1'
+2019-10-18T09:31:07.245218Z	  438 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:31:07.245638Z	  438 Query	SET NAMES utf8
+2019-10-18T09:31:07.246000Z	  437 Quit	
+2019-10-18T09:31:07.246185Z	  438 Query	UPDATE propositions SET p_text = 'ertye', correct = '0' WHERE question_id = '48' AND p_order= '2'
+2019-10-18T09:31:07.263743Z	  439 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:31:07.264154Z	  439 Query	SET NAMES utf8
+2019-10-18T09:31:07.264520Z	  438 Quit	
+2019-10-18T09:31:07.264729Z	  439 Query	UPDATE propositions SET p_text = 'tyerty', correct = '0' WHERE question_id = '48' AND p_order= '3'
+2019-10-18T09:31:07.277662Z	  440 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:31:07.278079Z	  440 Query	SET NAMES utf8
+2019-10-18T09:31:07.278406Z	  439 Quit	
+2019-10-18T09:31:07.278600Z	  440 Query	UPDATE propositions SET p_text = 'ertyer', correct = '0' WHERE question_id = '48' AND p_order= '4'
+2019-10-18T09:31:07.296283Z	  441 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:31:07.296465Z	  441 Query	SET NAMES utf8
+2019-10-18T09:31:07.296640Z	  440 Quit	
+2019-10-18T09:31:07.296727Z	  441 Query	UPDATE propositions SET p_text = 'tyerty', correct = '0' WHERE question_id = '48' AND p_order= '5'
+2019-10-18T09:31:07.309647Z	  442 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:31:07.309875Z	  442 Query	SET NAMES utf8
+2019-10-18T09:31:07.310073Z	  436 Quit	
+2019-10-18T09:31:07.310164Z	  442 Query	UPDATE questions SET q_text= 'sdfg' WHERE session_id= '9' AND q_order= '6'
+2019-10-18T09:31:07.320027Z	  443 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:31:07.320400Z	  443 Query	SET NAMES utf8
+2019-10-18T09:31:07.320989Z	  441 Quit	
+2019-10-18T09:31:07.321112Z	  443 Query	UPDATE propositions SET p_text = 'sdfg', correct = '0' WHERE question_id = '52' AND p_order= '1'
+2019-10-18T09:31:07.350623Z	  444 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:31:07.350929Z	  444 Query	SET NAMES utf8
+2019-10-18T09:31:07.351216Z	  443 Quit	
+2019-10-18T09:31:07.351395Z	  444 Query	UPDATE propositions SET p_text = 'sdfg', correct = '0' WHERE question_id = '52' AND p_order= '2'
+2019-10-18T09:31:07.360748Z	  445 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:31:07.360958Z	  445 Query	SET NAMES utf8
+2019-10-18T09:31:07.361152Z	  444 Quit	
+2019-10-18T09:31:07.361238Z	  445 Query	UPDATE propositions SET p_text = 'sdfg', correct = '0' WHERE question_id = '52' AND p_order= '3'
+2019-10-18T09:31:07.374479Z	  446 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:31:07.374695Z	  446 Query	SET NAMES utf8
+2019-10-18T09:31:07.374873Z	  445 Quit	
+2019-10-18T09:31:07.374964Z	  446 Query	UPDATE propositions SET p_text = 'sdfg', correct = '0' WHERE question_id = '52' AND p_order= '4'
+2019-10-18T09:31:07.386093Z	  447 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:31:07.386465Z	  447 Query	SET NAMES utf8
+2019-10-18T09:31:07.386960Z	  446 Quit	
+2019-10-18T09:31:07.387236Z	  447 Query	UPDATE propositions SET p_text = '', correct = '0' WHERE question_id = '52' AND p_order= '5'
+2019-10-18T09:31:07.399107Z	  448 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:31:07.399354Z	  448 Query	SET NAMES utf8
+2019-10-18T09:31:07.399588Z	  442 Quit	
+2019-10-18T09:31:07.399697Z	  448 Query	UPDATE questions SET q_text= 'zertzert' WHERE session_id= '9' AND q_order= '7'
+2019-10-18T09:31:07.410539Z	  449 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:31:07.410825Z	  449 Query	SET NAMES utf8
+2019-10-18T09:31:07.411065Z	  447 Quit	
+2019-10-18T09:31:07.411184Z	  449 Query	UPDATE propositions SET p_text = 'zert', correct = '0' WHERE question_id = '53' AND p_order= '1'
+2019-10-18T09:31:07.424145Z	  450 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:31:07.424471Z	  450 Query	SET NAMES utf8
+2019-10-18T09:31:07.424764Z	  449 Quit	
+2019-10-18T09:31:07.424907Z	  450 Query	UPDATE propositions SET p_text = 'ezrt', correct = '0' WHERE question_id = '53' AND p_order= '2'
+2019-10-18T09:31:07.435188Z	  451 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:31:07.435521Z	  451 Query	SET NAMES utf8
+2019-10-18T09:31:07.435812Z	  450 Quit	
+2019-10-18T09:31:07.435972Z	  451 Query	UPDATE propositions SET p_text = 'zert', correct = '0' WHERE question_id = '53' AND p_order= '3'
+2019-10-18T09:31:07.448778Z	  452 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:31:07.449175Z	  452 Query	SET NAMES utf8
+2019-10-18T09:31:07.449539Z	  451 Quit	
+2019-10-18T09:31:07.449725Z	  452 Query	UPDATE propositions SET p_text = 'zert', correct = '0' WHERE question_id = '53' AND p_order= '4'
+2019-10-18T09:31:07.460163Z	  453 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:31:07.460644Z	  453 Query	SET NAMES utf8
+2019-10-18T09:31:07.461008Z	  452 Quit	
+2019-10-18T09:31:07.461230Z	  453 Query	UPDATE propositions SET p_text = '', correct = '0' WHERE question_id = '53' AND p_order= '5'
+2019-10-18T09:31:07.482458Z	  454 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:31:07.483165Z	  454 Query	SET NAMES utf8
+2019-10-18T09:31:07.483815Z	  448 Quit	
+2019-10-18T09:31:07.484219Z	  454 Query	UPDATE questions SET q_text= 'zertze' WHERE session_id= '9' AND q_order= '8'
+2019-10-18T09:31:07.502138Z	  455 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:31:07.502684Z	  455 Query	SET NAMES utf8
+2019-10-18T09:31:07.503304Z	  453 Quit	
+2019-10-18T09:31:07.503713Z	  455 Query	UPDATE propositions SET p_text = 'tzert', correct = '0' WHERE question_id = '54' AND p_order= '1'
+2019-10-18T09:31:07.518859Z	  456 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:31:07.519555Z	  456 Query	SET NAMES utf8
+2019-10-18T09:31:07.520190Z	  455 Quit	
+2019-10-18T09:31:07.520815Z	  456 Query	UPDATE propositions SET p_text = 'zertzert', correct = '0' WHERE question_id = '54' AND p_order= '2'
+2019-10-18T09:31:07.535037Z	  457 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:31:07.535820Z	  457 Query	SET NAMES utf8
+2019-10-18T09:31:07.536500Z	  456 Quit	
+2019-10-18T09:31:07.536949Z	  457 Query	UPDATE propositions SET p_text = 'zertze', correct = '0' WHERE question_id = '54' AND p_order= '3'
+2019-10-18T09:31:07.551153Z	  458 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:31:07.551876Z	  458 Query	SET NAMES utf8
+2019-10-18T09:31:07.552531Z	  457 Quit	
+2019-10-18T09:31:07.553004Z	  458 Query	UPDATE propositions SET p_text = 'rtzertze', correct = '0' WHERE question_id = '54' AND p_order= '4'
+2019-10-18T09:31:07.567455Z	  459 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:31:07.568243Z	  459 Query	SET NAMES utf8
+2019-10-18T09:31:07.568970Z	  458 Quit	
+2019-10-18T09:31:07.569250Z	  459 Query	UPDATE propositions SET p_text = 'rtzrt', correct = '0' WHERE question_id = '54' AND p_order= '5'
+2019-10-18T09:31:07.584151Z	  460 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:31:07.584872Z	  460 Query	SET NAMES utf8
+2019-10-18T09:31:07.585521Z	  454 Quit	
+2019-10-18T09:31:07.585858Z	  460 Query	INSERT INTO questions(session_id, q_order, q_text) VALUES('9', '9', '')
+2019-10-18T09:31:07.598668Z	  461 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:31:07.598981Z	  461 Query	SET NAMES utf8
+2019-10-18T09:31:07.599292Z	  461 Query	SELECT max(id) FROM questions
+2019-10-18T09:31:07.599654Z	  460 Quit	
+2019-10-18T09:31:07.600374Z	  462 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:31:07.600555Z	  462 Query	SET NAMES utf8
+2019-10-18T09:31:07.600712Z	  459 Quit	
+2019-10-18T09:31:07.600940Z	  462 Query	INSERT INTO propositions(question_id, p_order, p_text, correct) VALUES(55, 1, "", 0)
+2019-10-18T09:31:07.636384Z	  463 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:31:07.636630Z	  463 Query	SET NAMES utf8
+2019-10-18T09:31:07.636914Z	  462 Quit	
+2019-10-18T09:31:07.637103Z	  463 Query	INSERT INTO propositions(question_id, p_order, p_text, correct) VALUES(55, 2, "", 0)
+2019-10-18T09:31:07.647387Z	  464 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:31:07.647615Z	  464 Query	SET NAMES utf8
+2019-10-18T09:31:07.647822Z	  463 Quit	
+2019-10-18T09:31:07.647913Z	  464 Query	INSERT INTO propositions(question_id, p_order, p_text, correct) VALUES(55, 3, "", 0)
+2019-10-18T09:31:07.660605Z	  465 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:31:07.660767Z	  465 Query	SET NAMES utf8
+2019-10-18T09:31:07.660908Z	  464 Quit	
+2019-10-18T09:31:07.661000Z	  465 Query	INSERT INTO propositions(question_id, p_order, p_text, correct) VALUES(55, 4, "", 0)
+2019-10-18T09:31:07.696509Z	  466 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:31:07.696740Z	  466 Query	SET NAMES utf8
+2019-10-18T09:31:07.696929Z	  465 Quit	
+2019-10-18T09:31:07.697015Z	  466 Query	INSERT INTO propositions(question_id, p_order, p_text, correct) VALUES(55, 5, "", 0)
+2019-10-18T09:31:07.710288Z	  467 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:31:07.710476Z	  467 Query	SET NAMES utf8
+2019-10-18T09:31:07.710698Z	  411 Quit	
+2019-10-18T09:31:07.710790Z	  467 Query	SELECT * FROM sessions WHERE id="9"
+2019-10-18T09:31:07.712481Z	  468 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:31:07.712689Z	  468 Query	SET NAMES utf8
+2019-10-18T09:31:07.712870Z	  461 Quit	
+2019-10-18T09:31:07.712943Z	  468 Query	SELECT * FROM questions WHERE session_id LIKE 9 ORDER BY q_order
+2019-10-18T09:31:07.713582Z	  469 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:31:07.713741Z	  469 Query	SET NAMES utf8
+2019-10-18T09:31:07.713919Z	  469 Query	SELECT * FROM propositions WHERE question_id LIKE 49 ORDER BY p_order
+2019-10-18T09:31:07.714050Z	  466 Quit	
+2019-10-18T09:31:07.714750Z	  470 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:31:07.714919Z	  470 Query	SET NAMES utf8
+2019-10-18T09:31:07.715078Z	  469 Quit	
+2019-10-18T09:31:07.715141Z	  470 Query	SELECT * FROM propositions WHERE question_id LIKE 37 ORDER BY p_order
+2019-10-18T09:31:07.715805Z	  471 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:31:07.715980Z	  471 Query	SET NAMES utf8
+2019-10-18T09:31:07.716151Z	  471 Query	SELECT * FROM propositions WHERE question_id LIKE 50 ORDER BY p_order
+2019-10-18T09:31:07.716273Z	  470 Quit	
+2019-10-18T09:31:07.716871Z	  472 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:31:07.717041Z	  472 Query	SET NAMES utf8
+2019-10-18T09:31:07.717200Z	  471 Quit	
+2019-10-18T09:31:07.717262Z	  472 Query	SELECT * FROM propositions WHERE question_id LIKE 51 ORDER BY p_order
+2019-10-18T09:31:07.717905Z	  473 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:31:07.718051Z	  473 Query	SET NAMES utf8
+2019-10-18T09:31:07.718248Z	  473 Query	SELECT * FROM propositions WHERE question_id LIKE 48 ORDER BY p_order
+2019-10-18T09:31:07.718368Z	  472 Quit	
+2019-10-18T09:31:07.718974Z	  474 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:31:07.719155Z	  474 Query	SET NAMES utf8
+2019-10-18T09:31:07.719336Z	  473 Quit	
+2019-10-18T09:31:07.719423Z	  474 Query	SELECT * FROM propositions WHERE question_id LIKE 52 ORDER BY p_order
+2019-10-18T09:31:07.720252Z	  475 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:31:07.720531Z	  475 Query	SET NAMES utf8
+2019-10-18T09:31:07.720946Z	  475 Query	SELECT * FROM propositions WHERE question_id LIKE 53 ORDER BY p_order
+2019-10-18T09:31:07.721122Z	  474 Quit	
+2019-10-18T09:31:07.721835Z	  476 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:31:07.722018Z	  476 Query	SET NAMES utf8
+2019-10-18T09:31:07.722178Z	  475 Quit	
+2019-10-18T09:31:07.722247Z	  476 Query	SELECT * FROM propositions WHERE question_id LIKE 54 ORDER BY p_order
+2019-10-18T09:31:07.722919Z	  477 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:31:07.723087Z	  477 Query	SET NAMES utf8
+2019-10-18T09:31:07.723261Z	  477 Query	SELECT * FROM propositions WHERE question_id LIKE 55 ORDER BY p_order
+2019-10-18T09:31:07.723381Z	  476 Quit	
+2019-10-18T09:31:07.723701Z	  408 Quit	
+2019-10-18T09:31:07.723759Z	  477 Quit	
+2019-10-18T09:31:07.723857Z	  467 Quit	
+2019-10-18T09:31:07.724128Z	  409 Quit	
+2019-10-18T09:31:07.724187Z	  468 Quit	
+2019-10-18T09:31:13.349566Z	  478 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:31:13.350245Z	  478 Query	SET NAMES utf8
+2019-10-18T09:31:13.350396Z	  478 Query	SELECT * FROM config WHERE type = 'auth' AND name = 'moodle'
+2019-10-18T09:31:13.351395Z	  479 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:31:13.351508Z	  479 Query	SET NAMES utf8
+2019-10-18T09:31:13.351620Z	  479 Query	SELECT * FROM lang
+2019-10-18T09:31:13.380906Z	  478 Quit	
+2019-10-18T09:31:13.381312Z	  480 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:31:13.381450Z	  480 Query	SET NAMES utf8
+2019-10-18T09:31:13.381610Z	  480 Query	SELECT * FROM config WHERE type = 'view' AND name = 'background'
+2019-10-18T09:31:13.385177Z	  481 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:31:13.385310Z	  481 Query	SET NAMES utf8
+2019-10-18T09:31:13.385462Z	  481 Query	SELECT COUNT(*) FROM `questions` WHERE session_id = 9
+2019-10-18T09:31:13.386458Z	  482 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:31:13.386913Z	  482 Query	SET NAMES utf8
+2019-10-18T09:31:13.387198Z	  482 Query	UPDATE sessions SET title="azer" WHERE id=9
+2019-10-18T09:31:13.422534Z	  483 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:31:13.422758Z	  483 Query	SET NAMES utf8
+2019-10-18T09:31:13.422956Z	  481 Quit	
+2019-10-18T09:31:13.423064Z	  483 Query	UPDATE questions SET q_text= 'zerazer' WHERE session_id= '9' AND q_order= '1'
+2019-10-18T09:31:13.435131Z	  484 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:31:13.435375Z	  484 Query	SET NAMES utf8
+2019-10-18T09:31:13.435622Z	  484 Query	UPDATE propositions SET p_text = 'azere', correct = '0' WHERE question_id = '49' AND p_order= '1'
+2019-10-18T09:31:13.444645Z	  485 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:31:13.444864Z	  485 Query	SET NAMES utf8
+2019-10-18T09:31:13.445075Z	  484 Quit	
+2019-10-18T09:31:13.445128Z	  485 Query	UPDATE propositions SET p_text = 'azerazer', correct = '0' WHERE question_id = '49' AND p_order= '2'
+2019-10-18T09:31:13.458482Z	  486 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:31:13.458695Z	  486 Query	SET NAMES utf8
+2019-10-18T09:31:13.458909Z	  485 Quit	
+2019-10-18T09:31:13.458943Z	  486 Query	UPDATE propositions SET p_text = 'azer', correct = '0' WHERE question_id = '49' AND p_order= '3'
+2019-10-18T09:31:13.469193Z	  487 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:31:13.469471Z	  487 Query	SET NAMES utf8
+2019-10-18T09:31:13.469756Z	  486 Quit	
+2019-10-18T09:31:13.469919Z	  487 Query	UPDATE propositions SET p_text = 'azer', correct = '0' WHERE question_id = '49' AND p_order= '4'
+2019-10-18T09:31:13.483019Z	  488 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:31:13.483253Z	  488 Query	SET NAMES utf8
+2019-10-18T09:31:13.483461Z	  487 Quit	
+2019-10-18T09:31:13.483503Z	  488 Query	UPDATE propositions SET p_text = '', correct = '0' WHERE question_id = '49' AND p_order= '5'
+2019-10-18T09:31:13.493824Z	  489 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:31:13.494041Z	  489 Query	SET NAMES utf8
+2019-10-18T09:31:13.494242Z	  483 Quit	
+2019-10-18T09:31:13.494300Z	  489 Query	UPDATE questions SET q_text= 'fdghdfgh' WHERE session_id= '9' AND q_order= '2'
+2019-10-18T09:31:13.508294Z	  490 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:31:13.508500Z	  490 Query	SET NAMES utf8
+2019-10-18T09:31:13.508763Z	  490 Query	UPDATE propositions SET p_text = 'fdghdfgh', correct = '0' WHERE question_id = '37' AND p_order= '1'
+2019-10-18T09:31:13.508715Z	  488 Quit	
+2019-10-18T09:31:13.518663Z	  491 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:31:13.518893Z	  491 Query	SET NAMES utf8
+2019-10-18T09:31:13.519082Z	  490 Quit	
+2019-10-18T09:31:13.519178Z	  491 Query	UPDATE propositions SET p_text = 'dfghdfgh', correct = '0' WHERE question_id = '37' AND p_order= '2'
+2019-10-18T09:31:13.532133Z	  492 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:31:13.532349Z	  492 Query	SET NAMES utf8
+2019-10-18T09:31:13.532518Z	  491 Quit	
+2019-10-18T09:31:13.532636Z	  492 Query	UPDATE propositions SET p_text = 'dfghdfgh', correct = '0' WHERE question_id = '37' AND p_order= '3'
+2019-10-18T09:31:13.543013Z	  493 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:31:13.543234Z	  493 Query	SET NAMES utf8
+2019-10-18T09:31:13.543448Z	  492 Quit	
+2019-10-18T09:31:13.543479Z	  493 Query	UPDATE propositions SET p_text = 'dfghdfgh', correct = '0' WHERE question_id = '37' AND p_order= '4'
+2019-10-18T09:31:13.556868Z	  494 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:31:13.557090Z	  494 Query	SET NAMES utf8
+2019-10-18T09:31:13.557324Z	  494 Query	UPDATE propositions SET p_text = 'dfghdfgh', correct = '0' WHERE question_id = '37' AND p_order= '5'
+2019-10-18T09:31:13.557608Z	  493 Quit	
+2019-10-18T09:31:13.567139Z	  495 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:31:13.567354Z	  495 Query	SET NAMES utf8
+2019-10-18T09:31:13.567522Z	  489 Quit	
+2019-10-18T09:31:13.567581Z	  495 Query	UPDATE questions SET q_text= 'ze' WHERE session_id= '9' AND q_order= '3'
+2019-10-18T09:31:13.581043Z	  496 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:31:13.581258Z	  496 Query	SET NAMES utf8
+2019-10-18T09:31:13.581459Z	  494 Quit	
+2019-10-18T09:31:13.581575Z	  496 Query	UPDATE propositions SET p_text = 'azerazer', correct = '0' WHERE question_id = '50' AND p_order= '1'
+2019-10-18T09:31:13.592054Z	  497 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:31:13.592287Z	  497 Query	SET NAMES utf8
+2019-10-18T09:31:13.592507Z	  496 Quit	
+2019-10-18T09:31:13.592608Z	  497 Query	UPDATE propositions SET p_text = 'zerazer', correct = '0' WHERE question_id = '50' AND p_order= '2'
+2019-10-18T09:31:13.606244Z	  498 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:31:13.606507Z	  498 Query	SET NAMES utf8
+2019-10-18T09:31:13.606753Z	  497 Quit	
+2019-10-18T09:31:13.606889Z	  498 Query	UPDATE propositions SET p_text = 'aer', correct = '0' WHERE question_id = '50' AND p_order= '3'
+2019-10-18T09:31:13.616299Z	  499 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:31:13.616590Z	  499 Query	SET NAMES utf8
+2019-10-18T09:31:13.616842Z	  498 Quit	
+2019-10-18T09:31:13.616961Z	  499 Query	UPDATE propositions SET p_text = '', correct = '0' WHERE question_id = '50' AND p_order= '4'
+2019-10-18T09:31:13.630979Z	  500 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:31:13.631323Z	  500 Query	SET NAMES utf8
+2019-10-18T09:31:13.631659Z	  499 Quit	
+2019-10-18T09:31:13.631831Z	  500 Query	UPDATE propositions SET p_text = '', correct = '0' WHERE question_id = '50' AND p_order= '5'
+2019-10-18T09:31:13.641232Z	  501 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:31:13.641580Z	  501 Query	SET NAMES utf8
+2019-10-18T09:31:13.641939Z	  495 Quit	
+2019-10-18T09:31:13.642096Z	  501 Query	UPDATE questions SET q_text= 'zer' WHERE session_id= '9' AND q_order= '4'
+2019-10-18T09:31:13.655472Z	  502 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:31:13.655832Z	  502 Query	SET NAMES utf8
+2019-10-18T09:31:13.656163Z	  500 Quit	
+2019-10-18T09:31:13.656366Z	  502 Query	UPDATE propositions SET p_text = 'aer', correct = '0' WHERE question_id = '51' AND p_order= '1'
+2019-10-18T09:31:13.666159Z	  503 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:31:13.666512Z	  503 Query	SET NAMES utf8
+2019-10-18T09:31:13.666840Z	  502 Quit	
+2019-10-18T09:31:13.667022Z	  503 Query	UPDATE propositions SET p_text = 'azer', correct = '0' WHERE question_id = '51' AND p_order= '2'
+2019-10-18T09:31:13.679833Z	  504 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:31:13.680175Z	  504 Query	SET NAMES utf8
+2019-10-18T09:31:13.680492Z	  503 Quit	
+2019-10-18T09:31:13.680695Z	  504 Query	UPDATE propositions SET p_text = 'azer', correct = '0' WHERE question_id = '51' AND p_order= '3'
+2019-10-18T09:31:13.690491Z	  505 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:31:13.690879Z	  505 Query	SET NAMES utf8
+2019-10-18T09:31:13.691201Z	  504 Quit	
+2019-10-18T09:31:13.691363Z	  505 Query	UPDATE propositions SET p_text = '', correct = '0' WHERE question_id = '51' AND p_order= '4'
+2019-10-18T09:31:13.705179Z	  506 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:31:13.705522Z	  506 Query	SET NAMES utf8
+2019-10-18T09:31:13.705844Z	  505 Quit	
+2019-10-18T09:31:13.706032Z	  506 Query	UPDATE propositions SET p_text = '', correct = '0' WHERE question_id = '51' AND p_order= '5'
+2019-10-18T09:31:13.723516Z	  507 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:31:13.723862Z	  507 Query	SET NAMES utf8
+2019-10-18T09:31:13.724215Z	  501 Quit	
+2019-10-18T09:31:13.724421Z	  507 Query	UPDATE questions SET q_text= 'ertye' WHERE session_id= '9' AND q_order= '5'
+2019-10-18T09:31:13.737836Z	  508 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:31:13.738257Z	  508 Query	SET NAMES utf8
+2019-10-18T09:31:13.738552Z	  506 Quit	
+2019-10-18T09:31:13.738784Z	  508 Query	UPDATE propositions SET p_text = 'trye', correct = '0' WHERE question_id = '48' AND p_order= '1'
+2019-10-18T09:31:13.756433Z	  509 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:31:13.756801Z	  509 Query	SET NAMES utf8
+2019-10-18T09:31:13.757137Z	  508 Quit	
+2019-10-18T09:31:13.757308Z	  509 Query	UPDATE propositions SET p_text = 'ertye', correct = '0' WHERE question_id = '48' AND p_order= '2'
+2019-10-18T09:31:13.770063Z	  510 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:31:13.770881Z	  510 Query	SET NAMES utf8
+2019-10-18T09:31:13.771245Z	  509 Quit	
+2019-10-18T09:31:13.771537Z	  510 Query	UPDATE propositions SET p_text = 'tyerty', correct = '0' WHERE question_id = '48' AND p_order= '3'
+2019-10-18T09:31:13.786062Z	  511 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:31:13.786526Z	  511 Query	SET NAMES utf8
+2019-10-18T09:31:13.786888Z	  510 Quit	
+2019-10-18T09:31:13.787188Z	  511 Query	UPDATE propositions SET p_text = 'ertyer', correct = '0' WHERE question_id = '48' AND p_order= '4'
+2019-10-18T09:31:13.796766Z	  512 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:31:13.797113Z	  512 Query	SET NAMES utf8
+2019-10-18T09:31:13.797426Z	  511 Quit	
+2019-10-18T09:31:13.797585Z	  512 Query	UPDATE propositions SET p_text = 'tyerty', correct = '0' WHERE question_id = '48' AND p_order= '5'
+2019-10-18T09:31:13.810687Z	  513 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:31:13.811027Z	  513 Query	SET NAMES utf8
+2019-10-18T09:31:13.811350Z	  507 Quit	
+2019-10-18T09:31:13.811532Z	  513 Query	UPDATE questions SET q_text= 'sdfg' WHERE session_id= '9' AND q_order= '6'
+2019-10-18T09:31:13.821715Z	  514 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:31:13.822059Z	  514 Query	SET NAMES utf8
+2019-10-18T09:31:13.822388Z	  512 Quit	
+2019-10-18T09:31:13.822591Z	  514 Query	UPDATE propositions SET p_text = 'sdfg', correct = '0' WHERE question_id = '52' AND p_order= '1'
+2019-10-18T09:31:13.834916Z	  515 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:31:13.835269Z	  515 Query	SET NAMES utf8
+2019-10-18T09:31:13.835602Z	  514 Quit	
+2019-10-18T09:31:13.835801Z	  515 Query	UPDATE propositions SET p_text = 'sdfg', correct = '0' WHERE question_id = '52' AND p_order= '2'
+2019-10-18T09:31:13.845833Z	  516 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:31:13.846181Z	  516 Query	SET NAMES utf8
+2019-10-18T09:31:13.846439Z	  515 Quit	
+2019-10-18T09:31:13.846594Z	  516 Query	UPDATE propositions SET p_text = 'sdfg', correct = '0' WHERE question_id = '52' AND p_order= '3'
+2019-10-18T09:31:13.859814Z	  517 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:31:13.860174Z	  517 Query	SET NAMES utf8
+2019-10-18T09:31:13.860498Z	  516 Quit	
+2019-10-18T09:31:13.860669Z	  517 Query	UPDATE propositions SET p_text = 'sdfg', correct = '0' WHERE question_id = '52' AND p_order= '4'
+2019-10-18T09:31:13.870318Z	  518 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:31:13.870661Z	  518 Query	SET NAMES utf8
+2019-10-18T09:31:13.870999Z	  517 Quit	
+2019-10-18T09:31:13.871322Z	  518 Query	UPDATE propositions SET p_text = '', correct = '0' WHERE question_id = '52' AND p_order= '5'
+2019-10-18T09:31:13.883904Z	  519 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:31:13.884246Z	  519 Query	SET NAMES utf8
+2019-10-18T09:31:13.884564Z	  513 Quit	
+2019-10-18T09:31:13.884734Z	  519 Query	UPDATE questions SET q_text= 'zertzert' WHERE session_id= '9' AND q_order= '7'
+2019-10-18T09:31:13.895061Z	  520 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:31:13.895371Z	  520 Query	SET NAMES utf8
+2019-10-18T09:31:13.895725Z	  518 Quit	
+2019-10-18T09:31:13.895891Z	  520 Query	UPDATE propositions SET p_text = 'zert', correct = '0' WHERE question_id = '53' AND p_order= '1'
+2019-10-18T09:31:13.908464Z	  521 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:31:13.908793Z	  521 Query	SET NAMES utf8
+2019-10-18T09:31:13.909094Z	  520 Quit	
+2019-10-18T09:31:13.909258Z	  521 Query	UPDATE propositions SET p_text = 'ezrt', correct = '0' WHERE question_id = '53' AND p_order= '2'
+2019-10-18T09:31:13.919730Z	  522 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:31:13.920401Z	  522 Query	SET NAMES utf8
+2019-10-18T09:31:13.920967Z	  521 Quit	
+2019-10-18T09:31:13.921144Z	  522 Query	UPDATE propositions SET p_text = 'zert', correct = '0' WHERE question_id = '53' AND p_order= '3'
+2019-10-18T09:31:13.933270Z	  523 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:31:13.933630Z	  523 Query	SET NAMES utf8
+2019-10-18T09:31:13.933961Z	  522 Quit	
+2019-10-18T09:31:13.934122Z	  523 Query	UPDATE propositions SET p_text = 'zert', correct = '0' WHERE question_id = '53' AND p_order= '4'
+2019-10-18T09:31:13.944198Z	  524 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:31:13.944540Z	  524 Query	SET NAMES utf8
+2019-10-18T09:31:13.944812Z	  523 Quit	
+2019-10-18T09:31:13.944987Z	  524 Query	UPDATE propositions SET p_text = '', correct = '0' WHERE question_id = '53' AND p_order= '5'
+2019-10-18T09:31:13.957824Z	  525 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:31:13.958208Z	  525 Query	SET NAMES utf8
+2019-10-18T09:31:13.958468Z	  519 Quit	
+2019-10-18T09:31:13.958614Z	  525 Query	UPDATE questions SET q_text= 'zertze' WHERE session_id= '9' AND q_order= '8'
+2019-10-18T09:31:13.968397Z	  526 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:31:13.968747Z	  526 Query	SET NAMES utf8
+2019-10-18T09:31:13.969069Z	  524 Quit	
+2019-10-18T09:31:13.969232Z	  526 Query	UPDATE propositions SET p_text = 'tzert', correct = '0' WHERE question_id = '54' AND p_order= '1'
+2019-10-18T09:31:13.982307Z	  527 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:31:13.982696Z	  527 Query	SET NAMES utf8
+2019-10-18T09:31:13.983058Z	  526 Quit	
+2019-10-18T09:31:13.983273Z	  527 Query	UPDATE propositions SET p_text = 'zertzert', correct = '0' WHERE question_id = '54' AND p_order= '2'
+2019-10-18T09:31:13.993178Z	  528 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:31:13.993587Z	  528 Query	SET NAMES utf8
+2019-10-18T09:31:13.993949Z	  527 Quit	
+2019-10-18T09:31:13.994156Z	  528 Query	UPDATE propositions SET p_text = 'zertze', correct = '0' WHERE question_id = '54' AND p_order= '3'
+2019-10-18T09:31:14.006842Z	  529 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:31:14.007255Z	  529 Query	SET NAMES utf8
+2019-10-18T09:31:14.007619Z	  528 Quit	
+2019-10-18T09:31:14.007824Z	  529 Query	UPDATE propositions SET p_text = 'rtzertze', correct = '0' WHERE question_id = '54' AND p_order= '4'
+2019-10-18T09:31:14.017781Z	  530 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:31:14.018214Z	  530 Query	SET NAMES utf8
+2019-10-18T09:31:14.018721Z	  529 Quit	
+2019-10-18T09:31:14.018795Z	  530 Query	UPDATE propositions SET p_text = 'rtzrt', correct = '0' WHERE question_id = '54' AND p_order= '5'
+2019-10-18T09:31:14.030456Z	  531 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:31:14.030647Z	  531 Query	SET NAMES utf8
+2019-10-18T09:31:14.030812Z	  525 Quit	
+2019-10-18T09:31:14.030909Z	  531 Query	UPDATE questions SET q_text= 'gdfg' WHERE session_id= '9' AND q_order= '9'
+2019-10-18T09:31:14.041931Z	  532 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:31:14.042154Z	  532 Query	SET NAMES utf8
+2019-10-18T09:31:14.042353Z	  530 Quit	
+2019-10-18T09:31:14.042449Z	  532 Query	UPDATE propositions SET p_text = 'dfgh', correct = '0' WHERE question_id = '55' AND p_order= '1'
+2019-10-18T09:31:14.055403Z	  533 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:31:14.055634Z	  533 Query	SET NAMES utf8
+2019-10-18T09:31:14.055826Z	  532 Quit	
+2019-10-18T09:31:14.055930Z	  533 Query	UPDATE propositions SET p_text = 'dgh', correct = '0' WHERE question_id = '55' AND p_order= '2'
+2019-10-18T09:31:14.065698Z	  534 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:31:14.065879Z	  534 Query	SET NAMES utf8
+2019-10-18T09:31:14.066031Z	  533 Quit	
+2019-10-18T09:31:14.066116Z	  534 Query	UPDATE propositions SET p_text = 'dfgh', correct = '0' WHERE question_id = '55' AND p_order= '3'
+2019-10-18T09:31:14.079647Z	  535 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:31:14.079878Z	  535 Query	SET NAMES utf8
+2019-10-18T09:31:14.080076Z	  534 Quit	
+2019-10-18T09:31:14.080184Z	  535 Query	UPDATE propositions SET p_text = 'dfgh', correct = '0' WHERE question_id = '55' AND p_order= '4'
+2019-10-18T09:31:14.090610Z	  536 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:31:14.090830Z	  536 Query	SET NAMES utf8
+2019-10-18T09:31:14.091033Z	  535 Quit	
+2019-10-18T09:31:14.091146Z	  536 Query	UPDATE propositions SET p_text = '', correct = '0' WHERE question_id = '55' AND p_order= '5'
+2019-10-18T09:31:14.104590Z	  537 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:31:14.104805Z	  537 Query	SET NAMES utf8
+2019-10-18T09:31:14.105002Z	  482 Quit	
+2019-10-18T09:31:14.105096Z	  537 Query	SELECT * FROM sessions WHERE id="9"
+2019-10-18T09:31:14.106679Z	  538 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:31:14.106889Z	  538 Query	SET NAMES utf8
+2019-10-18T09:31:14.107116Z	  538 Query	SELECT * FROM questions WHERE session_id LIKE 9 ORDER BY q_order
+2019-10-18T09:31:14.107273Z	  531 Quit	
+2019-10-18T09:31:14.107852Z	  539 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:31:14.108055Z	  539 Query	SET NAMES utf8
+2019-10-18T09:31:14.108252Z	  536 Quit	
+2019-10-18T09:31:14.108332Z	  539 Query	SELECT * FROM propositions WHERE question_id LIKE 49 ORDER BY p_order
+2019-10-18T09:31:14.109094Z	  540 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:31:14.109252Z	  540 Query	SET NAMES utf8
+2019-10-18T09:31:14.109412Z	  539 Quit	
+2019-10-18T09:31:14.109484Z	  540 Query	SELECT * FROM propositions WHERE question_id LIKE 37 ORDER BY p_order
+2019-10-18T09:31:14.110209Z	  541 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:31:14.110357Z	  541 Query	SET NAMES utf8
+2019-10-18T09:31:14.110531Z	  540 Quit	
+2019-10-18T09:31:14.110630Z	  541 Query	SELECT * FROM propositions WHERE question_id LIKE 50 ORDER BY p_order
+2019-10-18T09:31:14.111503Z	  542 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:31:14.111688Z	  542 Query	SET NAMES utf8
+2019-10-18T09:31:14.111859Z	  541 Quit	
+2019-10-18T09:31:14.111961Z	  542 Query	SELECT * FROM propositions WHERE question_id LIKE 51 ORDER BY p_order
+2019-10-18T09:31:14.112897Z	  543 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:31:14.113102Z	  543 Query	SET NAMES utf8
+2019-10-18T09:31:14.113320Z	  543 Query	SELECT * FROM propositions WHERE question_id LIKE 48 ORDER BY p_order
+2019-10-18T09:31:14.113625Z	  542 Quit	
+2019-10-18T09:31:14.114259Z	  544 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:31:14.114469Z	  544 Query	SET NAMES utf8
+2019-10-18T09:31:14.114644Z	  543 Quit	
+2019-10-18T09:31:14.114750Z	  544 Query	SELECT * FROM propositions WHERE question_id LIKE 52 ORDER BY p_order
+2019-10-18T09:31:14.115534Z	  545 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:31:14.115718Z	  545 Query	SET NAMES utf8
+2019-10-18T09:31:14.115865Z	  544 Quit	
+2019-10-18T09:31:14.115977Z	  545 Query	SELECT * FROM propositions WHERE question_id LIKE 53 ORDER BY p_order
+2019-10-18T09:31:14.116728Z	  546 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:31:14.116897Z	  546 Query	SET NAMES utf8
+2019-10-18T09:31:14.117107Z	  545 Quit	
+2019-10-18T09:31:14.117122Z	  546 Query	SELECT * FROM propositions WHERE question_id LIKE 54 ORDER BY p_order
+2019-10-18T09:31:14.117813Z	  547 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:31:14.117961Z	  547 Query	SET NAMES utf8
+2019-10-18T09:31:14.118074Z	  546 Quit	
+2019-10-18T09:31:14.118138Z	  547 Query	SELECT * FROM propositions WHERE question_id LIKE 55 ORDER BY p_order
+2019-10-18T09:31:14.118656Z	  538 Quit	
+2019-10-18T09:31:14.118725Z	  479 Quit	
+2019-10-18T09:31:14.118759Z	  480 Quit	
+2019-10-18T09:31:14.118947Z	  537 Quit	
+2019-10-18T09:31:14.119029Z	  547 Quit	
+2019-10-18T09:31:14.155938Z	  548 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:31:14.156187Z	  548 Query	SET NAMES utf8
+2019-10-18T09:31:14.156416Z	  548 Query	SELECT * FROM config WHERE type = 'auth' AND name = 'moodle'
+2019-10-18T09:31:14.157142Z	  549 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:31:14.157341Z	  549 Query	SET NAMES utf8
+2019-10-18T09:31:14.157542Z	  549 Query	SELECT * FROM lang
+2019-10-18T09:31:14.158721Z	  548 Quit	
+2019-10-18T09:31:14.159122Z	  550 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:31:14.159331Z	  550 Query	SET NAMES utf8
+2019-10-18T09:31:14.159544Z	  550 Query	SELECT * FROM config WHERE type = 'view' AND name = 'background'
+2019-10-18T09:31:14.163101Z	  551 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:31:14.163303Z	  551 Query	SET NAMES utf8
+2019-10-18T09:31:14.163498Z	  551 Query	SELECT * FROM sessions WHERE user_id="1"
+2019-10-18T09:31:14.164179Z	  552 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:31:14.164355Z	  552 Query	SET NAMES utf8
+2019-10-18T09:31:14.164541Z	  552 Query	SELECT count(*) AS COUNT FROM reponses WHERE question_id IN(SELECT id FROM questions WHERE session_id =1 GROUP BY session_id)
+2019-10-18T09:31:14.165126Z	  553 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:31:14.165297Z	  553 Query	SET NAMES utf8
+2019-10-18T09:31:14.165456Z	  552 Quit	
+2019-10-18T09:31:14.165533Z	  553 Query	SELECT count(*) AS COUNT FROM reponses WHERE question_id IN(SELECT id FROM questions WHERE session_id =9 GROUP BY session_id)
+2019-10-18T09:31:14.166116Z	  554 Connect	root@172.17.0.3 on Qamphiv2 using TCP/IP
+2019-10-18T09:31:14.166285Z	  554 Query	SET NAMES utf8
+2019-10-18T09:31:14.166454Z	  553 Quit	
+2019-10-18T09:31:14.166525Z	  554 Query	SELECT count(*) AS COUNT FROM reponses WHERE question_id IN(SELECT id FROM questions WHERE session_id =10 GROUP BY session_id)
+2019-10-18T09:31:14.167019Z	  549 Quit	
+2019-10-18T09:31:14.167041Z	  554 Quit	
+2019-10-18T09:31:14.167077Z	  550 Quit	
+2019-10-18T09:31:14.167127Z	  551 Quit	
